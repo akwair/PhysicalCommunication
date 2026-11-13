@@ -4,6 +4,8 @@ Research code, simulated-result arrays and manuscript for **Residual-noise
 calibration in off-grid OFDM: Leakage bias, temporal correlation, and
 cyclic-prefix controls**.
 
+Authors: Yuxiao Kuang (corresponding author) and Shengming Ni.
+
 ## Manuscript and submission files
 
 - [Current manuscript PDF](output/submission/PhysicalCommunication.pdf)
@@ -15,9 +17,10 @@ cyclic-prefix controls**.
 
 The submission directory is the current delivery. Repository upload is not
 journal submission. Journal-specific requirements were checked against the
-official Guide for Authors PDF supplied on 2026-11-13. Author biographies and
-photographs remain to be supplied; a photo waiver would require the journal's
-agreement. Repository access for editors and reviewers must be arranged:
+official Guide for Authors PDF supplied on 2026-11-13. Yuxiao Kuang's photograph
+is supplied separately in `output/submission/author_photos/`. Both author
+biographies and Shengming Ni's photograph remain to be supplied; a photo waiver
+would require the journal's agreement. Repository access for editors and reviewers must be arranged:
 the unauthenticated repository URL returned HTTP 404 during checking.
 
 ## Reproduction

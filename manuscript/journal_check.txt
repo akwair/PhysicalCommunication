@@ -26,7 +26,7 @@ VERIFIED JOURNAL REQUIREMENTS AND CURRENT FILES
   Current style is numeric, using elsarticle-num.
 - No explicit overall manuscript page/word limit found in this guide.
 - Vitae: each author <=100 words in editable format, with a passport-type
-  photograph supplied as a separate figure (p. 15). Author will supply these.
+  photograph supplied as a separate figure (p. 15). Yuxiao Kuang photograph supplied; both biographies and Shengming Ni photograph remain outstanding.
   Photographs are not listed as optional. No exemption has been granted.
 - Conflicts declaration tool must be completed, including when there are no
   interests, and its Word output uploaded separately; no signature required
@@ -68,3 +68,10 @@ PUBLISHER LATEX PACKAGING SOURCE
 https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions
 All source/figure/bibliography files are stored at one level in the upload ZIP.
 Do not upload main manuscript sources as supplementary material.
+
+AUTHOR UPDATE
+Author-confirmed order: Yuxiao Kuang (corresponding author), Shengming Ni.
+Second-author email: b25041225@njupt.edu.cn.
+Second-author CRediT roles drafted on request: Validation, Formal analysis,
+Writing - review & editing. Authors should ensure the roles match actual work.
+Yuxiao Kuang photo supplied as a separate original JPEG (576 x 670 pixels).
