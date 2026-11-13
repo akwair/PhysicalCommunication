@@ -31,10 +31,9 @@ VERIFIED JOURNAL REQUIREMENTS AND CURRENT FILES
 - Conflicts declaration tool must be completed, including when there are no
   interests, and its Word output uploaded separately; no signature required
   (pp. 4-5). Official tool: https://declarations.elsevier.com/
-  The tool was filled with the author-confirmed no-conflict responses, but
-  its download timed out. A separate locally prepared Word statement is
-  supplied for review. It is NOT a successful official-tool export; retrieve
-  the official output before journal submission if required by the interface.
+  The author supplied the official tool-generated Word output. Its no-conflict
+  checkbox is selected. The original file replaces the earlier local statement
+  without modifying its contents.
 - AI statement identifies the tool, purpose and author responsibility
   (pp. 5-6). Wording now describes implementation and debugging of simulation
   code, analysis of simulation outputs, and drafting/revision of text; it was
@@ -46,11 +45,9 @@ its link in the submission system, or explain why sharing is impossible.
 The manuscript and cover letter now link to:
 https://github.com/akwair/PhysicalCommunication
 Code, seeds, simulated metric arrays and summaries have been pushed there.
-Unauthenticated HTTP check returned 404 on 2026-11-13, while authenticated
-Git access succeeds. Therefore public/reviewer access has NOT been verified.
-No public-access claim or DOI was invented, and visibility was not changed.
-Before journal submission, arrange editor/reviewer access or an accessible
-research-data deposit. Merely inserting the link does not resolve access.
+After the author made the repository visible, anonymous HTTP checks returned
+200 for both the repository and the standard-channel summary JSON on 2026-11-13.
+The earlier access issue is resolved. No repository DOI is claimed.
 
 UPLOAD MAP
 - PhysicalCommunication.pdf: compiled review copy, where PDF upload is offered.

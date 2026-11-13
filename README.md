@@ -20,8 +20,9 @@ The submission directory is the current delivery. Repository upload is not
 journal submission. Journal-specific requirements were checked against the
 official Guide for Authors PDF supplied on 2026-11-13. Both authors' photographs
 are supplied separately in `output/submission/author_photos/`. Both author
-biographies are supplied in `output/submission/Author_biographies.docx`. Repository access for editors and reviewers must be arranged:
-the unauthenticated repository URL returned HTTP 404 during checking.
+biographies are supplied in `output/submission/Author_biographies.docx`. Anonymous access to both the repository and an experiment-result file was
+verified (HTTP 200) on 2026-11-13. The declaration attachment is the official
+tool-generated Word file supplied by the authors.
 
 ## Reproduction
 
