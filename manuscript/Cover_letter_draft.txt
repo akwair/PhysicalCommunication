@@ -24,7 +24,8 @@ The manuscript addresses physical-layer OFDM channel estimation and receiver
 analysis through a quantitative diagnostic and reproducible simulation study.
 
 The study uses simulated observations. Code, seeds, per-group metric outputs,
-and figure sources are prepared in a reproducibility package. OpenAI Codex was
+and figure sources are stored in the repository at
+https://github.com/akwair/PhysicalCommunication. OpenAI Codex was
 used for debugging assistance, as stated in the declaration.
 
 The authors declare no competing interests. The study received no specific
@@ -37,5 +38,6 @@ Communication.
 
 Sincerely,
 Yuxiao Kuang (corresponding author)
-Nanjing University of Posts and Telecommunications, Nanjing, China
+Nanjing University of Posts and Telecommunications
+Xianlin Campus, 9 Wenyuan Road, Nanjing 210023, China
 b24041416@njupt.edu.cn

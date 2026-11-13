@@ -12,6 +12,22 @@
   ],
   "abstract_whitespace_tokens": 200,
   "keywords": 5,
-  "journal_specific_guide_verified": false,
-  "reason": "Official guide returned HTTP 403; browser also returned content access error"
+  "journal_specific_guide_verified": true,
+  "guide_basis": "Author-supplied official Guide for Authors PDF, 19 pages, printed 2026-11-13 18:34",
+  "remaining_author_items": [
+    "biographies and passport-type photographs or journal-approved waiver",
+    "editor/reviewer access to dataset repository",
+    "retrieve official declaration-tool output; prepared local Word statement supplied"
+  ],
+  "repository_anonymous_http_status": 404,
+  "competing_interests_document": "Locally prepared; official tool download timed out",
+  "pdf_pages": 18,
+  "source_archive_files": 15,
+  "docx_files": [
+    "Cover_letter.docx",
+    "Highlights.docx",
+    "Declaration_of_competing_interests.docx"
+  ],
+  "docx_rendering": "Microsoft Word PDF export; bundled LibreOffice unavailable",
+  "docx_metadata_author_blank": true
 }

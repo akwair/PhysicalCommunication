@@ -8,14 +8,17 @@ cyclic-prefix controls**.
 
 - [Current manuscript PDF](output/submission/PhysicalCommunication.pdf)
 - [Flat LaTeX source archive](output/submission/PhysicalCommunication_LaTeX.zip)
-- [Cover letter](output/submission/Cover_letter.txt)
-- [Highlights](output/submission/Highlights.txt)
+- [Cover letter](output/submission/Cover_letter.docx)
+- [Highlights](output/submission/Highlights.docx)
+- [Declaration of competing interests](output/submission/Declaration_of_competing_interests.docx)
 - [Format and upload verification](manuscript/journal_check.txt)
 
 The submission directory is the current delivery. Repository upload is not
-journal submission. Publisher-wide requirements have been checked; the
-current journal-specific guide was inaccessible on 2026-11-13, as documented
-in the verification record.
+journal submission. Journal-specific requirements were checked against the
+official Guide for Authors PDF supplied on 2026-11-13. Author biographies and
+photographs remain to be supplied; a photo waiver would require the journal's
+agreement. Repository access for editors and reviewers must be arranged:
+the unauthenticated repository URL returned HTTP 404 during checking.
 
 ## Reproduction
 
