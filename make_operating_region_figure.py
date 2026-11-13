@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 
 def run():
     r = json.loads(Path('results/operating_region/summary.json').read_text())
-    out = Path('manuscript/figures')
+    out = Path('figures')
+    out.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({'font.family':'DejaVu Sans', 'font.size':8,
         'axes.labelsize':8,'axes.titlesize':9,'legend.fontsize':8,
         'xtick.labelsize':7,'ytick.labelsize':7,'axes.linewidth':.7,

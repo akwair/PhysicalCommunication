@@ -1,4 +1,0 @@
-独立种子复查（探索性结果）
-('results\\pilot\\results.json', 20261113, 2000, [(1, 'fixed_lmmse', -8.754), (1, 'uniform_lmmse', -11.539), (1, 'pdp_mixture', -11.573), (4, 'fixed_lmmse', -6.016), (4, 'uniform_lmmse', -10.083), (4, 'pdp_mixture', -9.089)])
-('results\\replication_1\\results.json', 20261114, 10000, [(1, 'fixed_lmmse', -8.772), (1, 'uniform_lmmse', -11.561), (1, 'pdp_mixture', -11.591), (4, 'fixed_lmmse', -6.024), (4, 'uniform_lmmse', -10.101), (4, 'pdp_mixture', -9.084)])
-('results\\replication_2\\results.json', 20261115, 10000, [(1, 'fixed_lmmse', -8.771), (1, 'uniform_lmmse', -11.56), (1, 'pdp_mixture', -11.59), (4, 'fixed_lmmse', -6.026), (4, 'uniform_lmmse', -10.101), (4, 'pdp_mixture', -9.099)])

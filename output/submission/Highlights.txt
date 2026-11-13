@@ -1,5 +1,0 @@
-- A covariance-based crossover quantifies when leakage dominates calibration error.
-- Temporal correlation limits the effective number of calibration observations.
-- Cyclic-prefix calibration yields 2.98 and 4.25 dB NMSE gains at 20 dB SNR.
-- Wider delay windows trade lower leakage against fewer residual noise dimensions.
-- Standard EPA/EVA profiles yield 5.75/6.12 dB CP-calibration gains at 20 dB SNR.

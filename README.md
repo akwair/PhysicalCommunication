@@ -1,60 +1,52 @@
 # Residual-noise calibration in off-grid OFDM
 
-Research code, simulated-result arrays and manuscript for **Residual-noise
-calibration in off-grid OFDM: Leakage bias, temporal correlation, and
-cyclic-prefix controls**.
+Python code and simulation results for OFDM noise calibration and channel
+estimation. The experiments compare pilot-residual and cyclic-prefix noise
+estimates using controlled channel profiles and standard EPA/EVA power-delay
+profiles.
 
-Authors: Yuxiao Kuang (corresponding author) and Shengming Ni.
+## Setup
 
-## Manuscript and submission files
+Python 3.13.9 was used for the recorded experiments.
 
-- [Current manuscript PDF](output/submission/PhysicalCommunication.pdf)
-- [Flat LaTeX source archive](output/submission/PhysicalCommunication_LaTeX.zip)
-- [Cover letter](output/submission/Cover_letter.docx)
-- [Highlights](output/submission/Highlights.docx)
-- [Author biographies](output/submission/Author_biographies.docx)
-- [Declaration of competing interests](output/submission/Declaration_of_competing_interests.docx)
-- [Format and upload verification](manuscript/journal_check.txt)
-
-The submission directory is the current delivery. Repository upload is not
-journal submission. Journal-specific requirements were checked against the
-official Guide for Authors PDF supplied on 2026-11-13. Both authors' photographs
-are supplied separately in `output/submission/author_photos/`. Both author
-biographies are supplied in `output/submission/Author_biographies.docx`. Anonymous access to both the repository and an experiment-result file was
-verified (HTTP 200) on 2026-11-13. The declaration attachment is the official
-tool-generated Word file supplied by the authors.
-
-## Reproduction
-
-See [README_REPRODUCE.txt](README_REPRODUCE.txt) for dependencies, saved result
-definitions, random seeds, experimental limitations, and build commands.
-Install the versions in `requirements.txt` and run:
-
-```powershell
-./reproduce_manuscript.ps1 -Mode Verify
+```sh
+python -m pip install -r requirements.txt
+python -m pytest -q
 ```
 
-`results/` contains simulated data and numerical summaries. `manuscript/`
-contains editable LaTeX, references and figures. The operating-region
-experiment protocol is retained in `revisions/adversarial_20261113/`.
+## Results
 
-The original third-party VALSE MATLAB demo is excluded. Its provenance is
-recorded in `references/valse_original/PROVENANCE.json`. Temporary files,
-compilation logs, old manuscript copies, internal review history, author
-administrative records and duplicate delivery archives are excluded from Git.
+| Experiment | Saved results |
+| --- | --- |
+| Residual averaging | `results/stage3_pool_summary/` |
+| Channel reconstruction | `results/stage3_offgrid_summary/` |
+| Paired CP calibration | `results/cp_confirmation_summary/` |
+| Bias and variance across channel geometries | `results/operating_region/` |
+| EPA/EVA validation | `results/standard_channel_summary/` |
+| Pilot-domain VALSE comparison | `results/valse_check_summary/` |
 
-## Standard power-delay-profile validation
+NPZ files contain per-group metrics and noise estimates. JSON and CSV files
+contain aggregate results. Observations can be regenerated from the recorded
+seeds. The EPA/EVA experiments use standard power-delay profiles in a
+block-static OFDM model.
 
-The additional EPA/EVA campaign preserves the delays and relative powers in
-3GPP TS 36.101 and uses the paper's block-static OFDM model. It contains 5400
-paired groups across two profiles and SNRs 0, 10 and 20 dB. At 20 dB, changing
-residual to CP calibration improves the same receiver's NMSE by 5.75 dB (EPA)
-and 6.12 dB (EVA). Full six-cell results, including the low-SNR outcomes, are
-in [the summary](results/standard_channel_summary/summary.json).
+## Reproduce
 
-See [the protocol](standard_channel_protocol.txt),
-[parameter provenance](references/standard_channels/SOURCE.json), and
-[reproduction guide](README_REPRODUCE.txt). The post-run optimizer-budget audit
-retains the primary results and changes all six NMSE gains by less than
-0.0015 dB. This validation is simulation with standard PDPs, not measured data
-or a full LTE conformance test.
+Run commands from the repository root. On PowerShell:
+
+```powershell
+./reproduce.ps1 -Mode Verify
+./reproduce.ps1 -Mode Figures
+./reproduce.ps1 -Mode StandardChannels
+```
+
+Figures are written to `figures/`. The standard-channel rerun writes to
+`results/standard_channel_reproduction/`, leaving the archived results intact.
+See [README_REPRODUCE.txt](README_REPRODUCE.txt) for seeds, data definitions,
+and individual commands.
+
+## Sources
+
+- [EPA/EVA parameters](references/standard_channels/SOURCE.json)
+- [VALSE source provenance](references/valse_original/PROVENANCE.json)
+- [VALSE implementation notes](valse_implementation_notes.txt)
