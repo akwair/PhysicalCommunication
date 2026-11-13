@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Full-channel NMSE (dB) at 20~dB nominal SNR; 900 paired groups per profile. Integer EB, extended EB, and grid/refined residual controls use 16-block calibration. The known-noise and oracle columns receive extra statistical information.}
+\label{tab:reconstruction}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+& Integer & Extended & Grid & Refined & Refined & Oracle \\
+Profile & EB & EB & residual & residual & known $v$ & LMMSE \\
+\midrule
+Exp-2 & -21.16 & -20.91 & -13.65 & -15.55 & -15.55 & -21.54 \\
+Exp-8 & -21.13 & -20.88 & -9.09 & -9.94 & -9.94 & -21.29 \\
+Sparse integer & -25.25 & -24.66 & -24.87 & -25.28 & -25.31 & -27.57 \\
+Separated fractional & -13.11 & -14.43 & -18.34 & -22.36 & -25.07 & -27.35 \\
+Close fractional & -12.84 & -13.55 & -18.23 & -19.19 & -23.67 & -26.06 \\
+\bottomrule
+\end{tabular}
+\end{table}

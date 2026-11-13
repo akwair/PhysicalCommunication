@@ -1,0 +1,48 @@
+Stage 2 pooled results: 3 independent seeds, 15000 frames per scenario.
+NMSE_dB: lower is better. Gain_dB: positive favors candidate.
+Exploratory paired frame bootstrap; no multiplicity correction.
+
+10 dB NMSE table:
+profile | L | plug-in | full integration | cut | diagonal EB | joint EM
+exp2 | 12 | -12.321 | -12.334 | -12.297 | -11.841 | -11.921
+exp2 | 15 | -11.538 | -12.169 | -11.253 | -11.146 | -11.129
+exp8 | 12 | -11.507 | -11.353 | -11.417 | -10.990 | -11.076
+exp8 | 15 | -10.510 | -10.502 | -9.719 | -10.423 | -10.748
+sparse_integer | 12 | -11.317 | -9.114 | -11.289 | -14.599 | -13.912
+sparse_integer | 15 | -10.143 | -7.215 | -9.641 | -13.092 | -11.920
+fractional_stress | 12 | -9.027 | -7.129 | -8.868 | -10.421 | -10.543
+fractional_stress | 15 | -9.079 | -6.622 | -8.600 | -10.362 | -10.261
+
+Paired comparisons at 10 dB:
+exp2 L=12 mixture_integrated vs mixture_plugin: gain=0.014 dB, CI95=[0.005236214801070474, 0.021620936310446443]
+exp2 L=12 mixture_cut vs mixture_plugin: gain=-0.024 dB, CI95=[-0.028171505680342986, -0.01863659308869342]
+exp2 L=12 mixture_cut vs mixture_integrated: gain=-0.037 dB, CI95=[-0.04456410067646877, -0.029938390113760403]
+exp2 L=12 diagonal_eb_plugin vs mixture_plugin: gain=-0.480 dB, CI95=[-0.49096510569091034, -0.4682431894656661]
+exp2 L=15 mixture_integrated vs mixture_plugin: gain=0.631 dB, CI95=[0.6157370364838002, 0.649166216400852]
+exp2 L=15 mixture_cut vs mixture_plugin: gain=-0.285 dB, CI95=[-0.30490291269085623, -0.2644165584036113]
+exp2 L=15 mixture_cut vs mixture_integrated: gain=-0.917 dB, CI95=[-0.9404448977192057, -0.8929168782643898]
+exp2 L=15 diagonal_eb_plugin vs mixture_plugin: gain=-0.392 dB, CI95=[-0.4054194634045139, -0.38048525828826035]
+exp8 L=12 mixture_integrated vs mixture_plugin: gain=-0.154 dB, CI95=[-0.16486035266945054, -0.14524357392545686]
+exp8 L=12 mixture_cut vs mixture_plugin: gain=-0.090 dB, CI95=[-0.09403579947096007, -0.08576338875285357]
+exp8 L=12 mixture_cut vs mixture_integrated: gain=0.064 dB, CI95=[0.05637937027770376, 0.07341989217053188]
+exp8 L=12 diagonal_eb_plugin vs mixture_plugin: gain=-0.518 dB, CI95=[-0.5298358500618048, -0.5068695013723331]
+exp8 L=15 mixture_integrated vs mixture_plugin: gain=-0.009 dB, CI95=[-0.025454224738839248, 0.009017276129981128]
+exp8 L=15 mixture_cut vs mixture_plugin: gain=-0.791 dB, CI95=[-0.8099655353097243, -0.7709882398098425]
+exp8 L=15 mixture_cut vs mixture_integrated: gain=-0.783 dB, CI95=[-0.8033972187374244, -0.7622660121622823]
+exp8 L=15 diagonal_eb_plugin vs mixture_plugin: gain=-0.088 dB, CI95=[-0.099584673810601, -0.07574016282414414]
+sparse_integer L=12 mixture_integrated vs mixture_plugin: gain=-2.203 dB, CI95=[-2.279701115345645, -2.1284291703680283]
+sparse_integer L=12 mixture_cut vs mixture_plugin: gain=-0.027 dB, CI95=[-0.03636918541541931, -0.018562621126500086]
+sparse_integer L=12 mixture_cut vs mixture_integrated: gain=2.176 dB, CI95=[2.107924029764605, 2.247344281478592]
+sparse_integer L=12 diagonal_eb_plugin vs mixture_plugin: gain=3.282 dB, CI95=[3.252070420637867, 3.3124712058744037]
+sparse_integer L=15 mixture_integrated vs mixture_plugin: gain=-2.928 dB, CI95=[-3.000353263210917, -2.8510264807197423]
+sparse_integer L=15 mixture_cut vs mixture_plugin: gain=-0.503 dB, CI95=[-0.5295004448166996, -0.4755601739998048]
+sparse_integer L=15 mixture_cut vs mixture_integrated: gain=2.425 dB, CI95=[2.3554466466430553, 2.4890328030907676]
+sparse_integer L=15 diagonal_eb_plugin vs mixture_plugin: gain=2.948 dB, CI95=[2.90184695411934, 2.998209753506595]
+fractional_stress L=12 mixture_integrated vs mixture_plugin: gain=-1.898 dB, CI95=[-1.947303739159068, -1.8502236189248569]
+fractional_stress L=12 mixture_cut vs mixture_plugin: gain=-0.159 dB, CI95=[-0.17101033885327416, -0.1460885422027898]
+fractional_stress L=12 mixture_cut vs mixture_integrated: gain=1.739 dB, CI95=[1.6902021760169497, 1.7796300234587454]
+fractional_stress L=12 diagonal_eb_plugin vs mixture_plugin: gain=1.394 dB, CI95=[1.3652824166717272, 1.4254181894505622]
+fractional_stress L=15 mixture_integrated vs mixture_plugin: gain=-2.457 dB, CI95=[-2.514786495068174, -2.395372077849027]
+fractional_stress L=15 mixture_cut vs mixture_plugin: gain=-0.480 dB, CI95=[-0.5058043295121887, -0.4562872494695879]
+fractional_stress L=15 mixture_cut vs mixture_integrated: gain=1.978 dB, CI95=[1.9213124703228448, 2.034041954716126]
+fractional_stress L=15 diagonal_eb_plugin vs mixture_plugin: gain=1.283 dB, CI95=[1.250741125142321, 1.315321843039315]

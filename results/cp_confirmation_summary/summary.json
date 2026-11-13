@@ -1,0 +1,575 @@
+{
+  "status": "frozen_independent_cp_control_no_multiplicity_adjustment",
+  "groups_per_cell": 900,
+  "seeds": [
+    1120261113,
+    1120261114,
+    1120261115
+  ],
+  "bootstrap_replicates": 2000,
+  "results": [
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -10.708847907229014,
+      "ber": 0.07565972222222223
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -10.713788078144297,
+      "ber": 0.07523148148148148
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -14.142540037994454,
+      "ber": 0.06054398148148148
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -14.494186626182861,
+      "ber": 0.05790509259259259
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -14.579715066749795,
+      "ber": 0.057465277777777775
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -13.106731462484085,
+      "ber": 0.02587962962962963
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -13.926324575876537,
+      "ber": 0.021944444444444444
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -21.760547827269498,
+      "ber": 0.01
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -24.73729318141995,
+      "ber": 0.00662037037037037
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -24.839362900651587,
+      "ber": 0.006724537037037037
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -10.282583831642107,
+      "ber": 0.08265046296296297
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -10.34176858088796,
+      "ber": 0.08204861111111111
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -12.738240623826831,
+      "ber": 0.06943287037037037
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -13.179625335892748,
+      "ber": 0.06521990740740741
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -13.158003223670447,
+      "ber": 0.06576388888888889
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -12.826154405986616,
+      "ber": 0.03050925925925926
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -13.663006599896176,
+      "ber": 0.026064814814814815
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -19.154956166400094,
+      "ber": 0.012060185185185186
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -23.405167208383624,
+      "ber": 0.00755787037037037
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -23.444488723226677,
+      "ber": 0.00755787037037037
+    }
+  ],
+  "noise": [
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "residual16",
+      "mean_ratio": 1.781949014696711,
+      "relative_std": 0.28170651861137624
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "cp16",
+      "mean_ratio": 1.0013163744246214,
+      "relative_std": 0.12243770869125918
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "relative_std": 0.0
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "residual16",
+      "mean_ratio": 8.780951734978888,
+      "relative_std": 1.9767702877523476
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "cp16",
+      "mean_ratio": 1.0069161203940031,
+      "relative_std": 0.12931253765029707
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "relative_std": 0.0
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "residual16",
+      "mean_ratio": 1.687041359586443,
+      "relative_std": 0.25162357198845964
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "cp16",
+      "mean_ratio": 0.9998810466606869,
+      "relative_std": 0.12804315414857526
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "relative_std": 0.0
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "residual16",
+      "mean_ratio": 7.882262452870209,
+      "relative_std": 1.7077760345250026
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "cp16",
+      "mean_ratio": 1.0028330363343883,
+      "relative_std": 0.12145352367896083
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "relative_std": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 0.35164658818840966,
+      "ci95": [
+        0.15812181105759285,
+        0.5554514606216826
+      ],
+      "ber_reduction": 0.002638888888888889,
+      "ber_ci95": [
+        0.0010648148148148149,
+        0.004410011574074072
+      ]
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.0855284405669316,
+      "ci95": [
+        0.013720728229641325,
+        0.15948210675282062
+      ],
+      "ber_reduction": 0.0004398148148148148,
+      "ber_ci95": [
+        4.6296296296296294e-05,
+        0.0008680555555555555
+      ]
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.004940170915284063,
+      "ci95": [
+        -0.024709888967039174,
+        0.03454493926093239
+      ],
+      "ber_reduction": 0.00042824074074074075,
+      "ber_ci95": [
+        -0.00045167824074074077,
+        0.0013313078703703688
+      ]
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 2.976745354150453,
+      "ci95": [
+        2.5694788703973566,
+        3.3447984153750894
+      ],
+      "ber_reduction": 0.0033796296296296296,
+      "ber_ci95": [
+        0.002361111111111111,
+        0.004548611111111111
+      ]
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.1020697192316357,
+      "ci95": [
+        0.0315601016218329,
+        0.17646569675618456
+      ],
+      "ber_reduction": -0.00010416666666666667,
+      "ber_ci95": [
+        -0.0002777777777777778,
+        5.787037037037037e-05
+      ]
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.8195931133924517,
+      "ci95": [
+        0.7632372249830288,
+        0.8827514428299532
+      ],
+      "ber_reduction": 0.003935185185185185,
+      "ber_ci95": [
+        0.0031018518518518517,
+        0.004791666666666667
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 0.4413847120659175,
+      "ci95": [
+        0.29827181671560193,
+        0.5904361743850111
+      ],
+      "ber_reduction": 0.004212962962962963,
+      "ber_ci95": [
+        0.0027662037037037034,
+        0.005787615740740738
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": -0.021622112222302182,
+      "ci95": [
+        -0.08458257851484666,
+        0.04472705218077255
+      ],
+      "ber_reduction": -0.0005439814814814816,
+      "ber_ci95": [
+        -0.0012268518518518518,
+        4.6296296296296294e-05
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.059184749245850786,
+      "ci95": [
+        0.03234668580145428,
+        0.08483056232259091
+      ],
+      "ber_reduction": 0.0006018518518518518,
+      "ber_ci95": [
+        -0.00025462962962962966,
+        0.0014239004629629612
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 4.25021104198353,
+      "ci95": [
+        3.971240024063491,
+        4.5176787011736605
+      ],
+      "ber_reduction": 0.004502314814814815,
+      "ber_ci95": [
+        0.0035645254629629625,
+        0.005509259259259259
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.03932151484305292,
+      "ci95": [
+        -0.019931357128724313,
+        0.09906822151966715
+      ],
+      "ber_reduction": 0.0,
+      "ber_ci95": [
+        -0.00011574074074074075,
+        0.00012731481481481483
+      ]
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.8368521939095599,
+      "ci95": [
+        0.7679050872177048,
+        0.9078889005572547
+      ],
+      "ber_reduction": 0.0044444444444444444,
+      "ber_ci95": [
+        0.0035185185185185185,
+        0.005300925925925925
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 0,
+      "any_candidate_failure": 5,
+      "mean_selected_order": 2.486666666666667,
+      "mean_nfev": 24.66888888888889
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 3,
+      "any_candidate_failure": 60,
+      "mean_selected_order": 2.862222222222222,
+      "mean_nfev": 41.946666666666665
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 2,
+      "any_candidate_failure": 60,
+      "mean_selected_order": 2.8433333333333333,
+      "mean_nfev": 41.90111111111111
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 0,
+      "any_candidate_failure": 0,
+      "mean_selected_order": 2.7288888888888887,
+      "mean_nfev": 13.523333333333333
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 3,
+      "any_candidate_failure": 47,
+      "mean_selected_order": 3.1066666666666665,
+      "mean_nfev": 35.64888888888889
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 2,
+      "any_candidate_failure": 46,
+      "mean_selected_order": 3.078888888888889,
+      "mean_nfev": 35.66555555555556
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 3,
+      "any_candidate_failure": 33,
+      "mean_selected_order": 2.7022222222222223,
+      "mean_nfev": 34.02444444444444
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 9,
+      "any_candidate_failure": 104,
+      "mean_selected_order": 3.1655555555555557,
+      "mean_nfev": 54.62111111111111
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 10,
+      "any_candidate_failure": 97,
+      "mean_selected_order": 3.1277777777777778,
+      "mean_nfev": 53.07555555555555
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 0,
+      "any_candidate_failure": 3,
+      "mean_selected_order": 2.986666666666667,
+      "mean_nfev": 20.483333333333334
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 45,
+      "any_candidate_failure": 161,
+      "mean_selected_order": 3.86,
+      "mean_nfev": 57.14111111111111
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 44,
+      "any_candidate_failure": 166,
+      "mean_selected_order": 3.85,
+      "mean_nfev": 57.26222222222222
+    }
+  ],
+  "maximum_cp_signal_difference": 0.0
+}

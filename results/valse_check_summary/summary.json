@@ -1,0 +1,513 @@
+{
+  "status": "exploratory_implementation_check_not_author_runtime_equivalence",
+  "source_directories": [
+    "results\\valse_check1",
+    "results\\valse_check2",
+    "results\\valse_check3"
+  ],
+  "seeds": [
+    1220261113,
+    1220261114,
+    1220261115
+  ],
+  "groups_per_cell": 450,
+  "source_hashes": {
+    "valse_pilot_check.py": "4e1fe77288b5d123697ea49092ccf316eaa0af502e5f3c0c23e6b731ad45db14",
+    "valse_python.py": "deb3c6e279011dc0e29b7227df36167b97f017a96a9703dc41124cca3151ea7f",
+    "test_valse_python.py": "1c9b95894aa6896e39fc256be034ae535b3d76aa9e5041e2d20d81d8468923d7",
+    "offgrid_baseline.py": "0d1a1f5d8bf09942c0d9537d1868d1b2f576cc2dd1bb531ba01ff858183bbe3d",
+    "stage3_study.py": "fb9eb2c2a9e3c3567f7df7baacb3f243cc12a6e2863776a49c88a81bc91bc50e",
+    "noise_study.py": "faa294dcd979d5b21367533c3d1c3815acf61596c0e502d22f2fa7b2ead9ff60",
+    "pilot_ofdm.py": "9f4eee90a8e45940f19cb6306310878122244d08fd3f2c37cd601f19d8a19bff",
+    "confirmation_protocol.txt": "acc21dd50066b344f5f3ee202188294463cc41caaffa4a30b79c90fbee48fb8c"
+  },
+  "results": [
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -14.864538105002028
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -14.441716987303135,
+      "mean_order": 2.8422222222222224,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 23,
+      "total_seconds": 11.978577900001255
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -14.552952712713502,
+      "mean_order": 2.82,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 24,
+      "total_seconds": 10.726539300001605
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -14.297910950519492,
+      "mean_noise_ratio": 1.0370793960255338,
+      "median_noise_ratio": 0.9953165434006146,
+      "mean_order": 2.7111111111111112,
+      "converged_groups": 449,
+      "nonconverged_groups": 1,
+      "mean_iterations": 36.67777777777778,
+      "max_iterations": 500,
+      "stability": {
+        "nonconcave_frequency_updates": 21
+      },
+      "total_seconds": 95.18623420000222
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -24.97720172954123
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -24.86142924415695,
+      "mean_order": 3.0644444444444443,
+      "selected_optimizer_failures": 1,
+      "candidate_optimizer_failures": 38,
+      "total_seconds": 9.833412500000122
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -24.85676139514431,
+      "mean_order": 3.06,
+      "selected_optimizer_failures": 1,
+      "candidate_optimizer_failures": 42,
+      "total_seconds": 11.070479699996213
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -23.86215267672347,
+      "mean_noise_ratio": 1.1289273353899953,
+      "median_noise_ratio": 1.002798132668699,
+      "mean_order": 2.8422222222222224,
+      "converged_groups": 449,
+      "nonconverged_groups": 1,
+      "mean_iterations": 35.05555555555556,
+      "max_iterations": 500,
+      "stability": {
+        "large_kappa_asymptotic": 1360,
+        "nonconcave_frequency_updates": 10
+      },
+      "total_seconds": 118.40181920000032
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -10.950950573247784
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -14.088306739511863,
+      "mean_order": 2.502222222222222,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 3,
+      "total_seconds": 8.033480700003565
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -14.56917999883128,
+      "mean_order": 2.851111111111111,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 28,
+      "total_seconds": 14.233479599999555
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -14.46158050836901,
+      "mean_noise_ratio": 1.0356910137959097,
+      "median_noise_ratio": 0.996316655107381,
+      "mean_order": 2.7377777777777776,
+      "converged_groups": 449,
+      "nonconverged_groups": 1,
+      "mean_iterations": 36.17333333333333,
+      "max_iterations": 500,
+      "stability": {
+        "nonconcave_frequency_updates": 10
+      },
+      "total_seconds": 116.9872286999962
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -13.763730091179262
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -22.13466023408673,
+      "mean_order": 2.7311111111111113,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 4.694043500003318
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -24.97426378020933,
+      "mean_order": 3.08,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 28,
+      "total_seconds": 12.397246700002142
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -23.92034109739847,
+      "mean_noise_ratio": 1.1724418531886647,
+      "median_noise_ratio": 1.075579335523229,
+      "mean_order": 2.848888888888889,
+      "converged_groups": 450,
+      "nonconverged_groups": 0,
+      "mean_iterations": 33.85333333333333,
+      "max_iterations": 45,
+      "stability": {
+        "nonconcave_frequency_updates": 9,
+        "large_kappa_asymptotic": 544
+      },
+      "total_seconds": 110.24000400000295
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -10.74870618888935
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -12.757639008030985,
+      "mean_order": 2.6955555555555555,
+      "selected_optimizer_failures": 2,
+      "candidate_optimizer_failures": 8,
+      "total_seconds": 10.61352060000354
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -13.23686961237762,
+      "mean_order": 3.102222222222222,
+      "selected_optimizer_failures": 3,
+      "candidate_optimizer_failures": 40,
+      "total_seconds": 17.162804499996128
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -12.968740675102453,
+      "mean_noise_ratio": 1.123200276134417,
+      "median_noise_ratio": 1.060063866150816,
+      "mean_order": 2.917777777777778,
+      "converged_groups": 450,
+      "nonconverged_groups": 0,
+      "mean_iterations": 54.03111111111111,
+      "max_iterations": 493,
+      "stability": {
+        "nonconcave_frequency_updates": 12
+      },
+      "total_seconds": 201.59742299999925
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -13.816195182990613
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 450,
+      "pilot_nmse_db": -18.921793074608686,
+      "mean_order": 3.013333333333333,
+      "selected_optimizer_failures": 2,
+      "candidate_optimizer_failures": 5,
+      "total_seconds": 7.440853699998115
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 450,
+      "pilot_nmse_db": -23.834530283068265,
+      "mean_order": 3.84,
+      "selected_optimizer_failures": 29,
+      "candidate_optimizer_failures": 149,
+      "total_seconds": 22.749645999996574
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 450,
+      "pilot_nmse_db": -19.845804270677828,
+      "mean_noise_ratio": 1.9356086366204062,
+      "median_noise_ratio": 1.4332229851425504,
+      "mean_order": 3.18,
+      "converged_groups": 441,
+      "nonconverged_groups": 9,
+      "mean_iterations": 108.82222222222222,
+      "max_iterations": 500,
+      "stability": {
+        "nonconcave_frequency_updates": 8
+      },
+      "total_seconds": 423.15011580000646
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.14380603678364193,
+      "percentile_95_ci_db": [
+        -0.049493724083731164,
+        0.34545368329367565
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.2550417621940105,
+      "percentile_95_ci_db": [
+        0.05357893540768952,
+        0.4629164717778329
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.9992765674334846,
+      "percentile_95_ci_db": [
+        0.5956894049473616,
+        1.4228695718179656
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.9946087184208414,
+      "percentile_95_ci_db": [
+        0.594154630153886,
+        1.4047138110500854
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": -0.37327376885714647,
+      "percentile_95_ci_db": [
+        -0.5686145986062767,
+        -0.16733008323398685
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.10759949046226927,
+      "percentile_95_ci_db": [
+        -0.08053610550771333,
+        0.30668778488796467
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": -1.7856808633117403,
+      "percentile_95_ci_db": [
+        -2.347277939294714,
+        -1.1888454025884805
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 1.0539226828108603,
+      "percentile_95_ci_db": [
+        0.5840345938666416,
+        1.5517385233341219
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": -0.21110166707146544,
+      "percentile_95_ci_db": [
+        -0.3914521419828601,
+        -0.026051629815636055
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.2681289372751678,
+      "percentile_95_ci_db": [
+        0.08167815511294176,
+        0.4618617115039474
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": -0.9240111960691405,
+      "percentile_95_ci_db": [
+        -1.3574838659544939,
+        -0.48414773179394355
+      ],
+      "groups": 450,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 3.9887260123904373,
+      "percentile_95_ci_db": [
+        3.5780995235150272,
+        4.412301408525921
+      ],
+      "groups": 450,
+      "resamples": 2000
+    }
+  ],
+  "bootstrap_seed": 1320261113,
+  "bootstrap_unit": "independent calibration group with paired methods",
+  "multiplicity_adjusted": false,
+  "assumptions": {
+    "pilot_order": "ascending signed frequency [-0.5,...,0.4375]",
+    "valse_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "valse_heuristic": 2,
+    "valse_covariance_index": "equation",
+    "valse_max_iter": 500,
+    "residual_calibration_blocks": 16,
+    "valse_observation_blocks": 1,
+    "full_cfr_extrapolation": false,
+    "ber_comparison": false,
+    "refined_delay_support": [
+      0.0,
+      12.0
+    ],
+    "valse_frequency_support": "unrestricted circle; delay modulo 16",
+    "known_noise_reference_has_oracle_noise": true
+  },
+  "artifact_hashes": {
+    "results\\valse_check1\\results.json": "3d0e7f3b57a883f945c820c5f9647b27a78abaa76bf3db3aafc5e93c7f9b7e1a",
+    "results\\valse_check1\\frame_metrics.npz": "517a265cd506f9268f697f0ad73e42737af97b4cc80788f3a230fd588f94dbd4",
+    "results\\valse_check2\\results.json": "e254fba8072654bdedc45bb8a321963ae2052c2677b9fbf86a204fa87eb1e4ec",
+    "results\\valse_check2\\frame_metrics.npz": "a9a04dced9ec9f6d04b2a5c486c40349d8356b840850fbd85870f648c37fd112",
+    "results\\valse_check3\\results.json": "fbc6a731afc2f38e7fb9f480fa353bf1e4c624a7037acf6e5b3c98b21470e297",
+    "results\\valse_check3\\frame_metrics.npz": "11966b3237edaf6318b05628dffef40b2ac2a1462200f80767b968951c453782"
+  }
+}

@@ -1,0 +1,31 @@
+Joint continuous-parameter inference provides a second route to separating
+signal and noise. We evaluate a Python implementation of VALSE Heuristic~2
+from the paper equations \cite{badiu2017valse}, retaining frequency and gain
+uncertainty in the noise update. VALSE learns from one target block over a
+circular frequency support, while the refined control uses the delay bound
+$[0,12]$ and 16 calibration blocks for its residual statistic. The comparison
+therefore measures pilot-domain reconstruction and inferred noise under these
+different resources. Full-channel interpolation would additionally require a
+physical delay branch for the frequency posterior.
+
+Three new seeds give 450 paired groups for each of three sparse profiles
+at 10 and 20~dB. The primary setting uses a 500-iteration limit and a relative
+reconstruction-change tolerance of $10^{-6}$. All 2700 outputs are retained:
+2688 met the stopping criterion, and 12 reached the iteration limit.
+Appendix~\ref{app:valse} details the implementation and numerical checks.
+Replaying the 12 capped inputs with a 5000-iteration ceiling gives 11 further
+convergences. Across the six cells, pilot NMSE changes by at most
+0.000624~dB and the mean inferred-noise ratio by $2.72\times10^{-5}$.
+The primary table retains the original 500-iteration outputs.
+
+\input{table_valse}
+
+Table~\ref{tab:valse} shows noise inference with a continuous probabilistic
+model. At 20~dB, the mean noise ratios were 1.13, 1.17, and 1.94 for integer,
+separated fractional, and close fractional paths, respectively. The larger
+close-pair ratio accompanies a larger pilot reconstruction error, identifying
+a condition where the specified joint inference retains appreciable calibration
+error. For separated fractional paths, pilot NMSE was $-23.92$~dB,
+between the residual-calibrated and known-noise refined controls. These
+pilot-domain observations complement the full-channel CP intervention by
+showing how calibration also depends on the inferential model.

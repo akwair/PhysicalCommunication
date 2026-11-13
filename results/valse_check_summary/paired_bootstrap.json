@@ -1,0 +1,158 @@
+[
+  {
+    "profile": "sparse_integer",
+    "snr_db": 10,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.14380603678364193,
+    "percentile_95_ci_db": [
+      -0.049493724083731164,
+      0.34545368329367565
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "sparse_integer",
+    "snr_db": 10,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.2550417621940105,
+    "percentile_95_ci_db": [
+      0.05357893540768952,
+      0.4629164717778329
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "sparse_integer",
+    "snr_db": 20,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.9992765674334846,
+    "percentile_95_ci_db": [
+      0.5956894049473616,
+      1.4228695718179656
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "sparse_integer",
+    "snr_db": 20,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.9946087184208414,
+    "percentile_95_ci_db": [
+      0.594154630153886,
+      1.4047138110500854
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "fractional_sparse",
+    "snr_db": 10,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": -0.37327376885714647,
+    "percentile_95_ci_db": [
+      -0.5686145986062767,
+      -0.16733008323398685
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "fractional_sparse",
+    "snr_db": 10,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.10759949046226927,
+    "percentile_95_ci_db": [
+      -0.08053610550771333,
+      0.30668778488796467
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "fractional_sparse",
+    "snr_db": 20,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": -1.7856808633117403,
+    "percentile_95_ci_db": [
+      -2.347277939294714,
+      -1.1888454025884805
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "fractional_sparse",
+    "snr_db": 20,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 1.0539226828108603,
+    "percentile_95_ci_db": [
+      0.5840345938666416,
+      1.5517385233341219
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "close_fractional",
+    "snr_db": 10,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": -0.21110166707146544,
+    "percentile_95_ci_db": [
+      -0.3914521419828601,
+      -0.026051629815636055
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "close_fractional",
+    "snr_db": 10,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 0.2681289372751678,
+    "percentile_95_ci_db": [
+      0.08167815511294176,
+      0.4618617115039474
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "close_fractional",
+    "snr_db": 20,
+    "reference": "refined_residual16",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": -0.9240111960691405,
+    "percentile_95_ci_db": [
+      -1.3574838659544939,
+      -0.48414773179394355
+    ],
+    "groups": 450,
+    "resamples": 2000
+  },
+  {
+    "profile": "close_fractional",
+    "snr_db": 20,
+    "reference": "refined_known_noise",
+    "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+    "difference_db": 3.9887260123904373,
+    "percentile_95_ci_db": [
+      3.5780995235150272,
+      4.412301408525921
+    ],
+    "groups": 450,
+    "resamples": 2000
+  }
+]

@@ -1,0 +1,4 @@
+# Preserve byte-level provenance hashes across platforms.
+* -text
+# Matplotlib's generated SVG paths contain intentional trailing spaces.
+*.svg -whitespace

@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-11-13",
+  "tests_passed": 58,
+  "test_exit_code": 0,
+  "test_seconds": 6.67,
+  "post_exit_console_warning": "pyreadline3 Console destructor warning; pytest exit 0",
+  "highlights_characters": [
+    81,
+    77,
+    74,
+    80
+  ],
+  "abstract_whitespace_tokens": 200,
+  "keywords": 5,
+  "journal_specific_guide_verified": false,
+  "reason": "Official guide returned HTTP 403; browser also returned content access error"
+}

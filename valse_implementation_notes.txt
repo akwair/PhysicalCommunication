@@ -1,0 +1,218 @@
+VALSE paper-equation CPU implementation and validation
+Date: 2026-11-13
+
+Status and scope
+The implementation valse_python.py follows the VALSE equations and Heuristic 2
+in Badiu, Hansen and Fleury, Variational Bayesian Inference of Line Spectra,
+IEEE TSP 65(9):2247-2261, 2017, DOI 10.1109/TSP.2017.2655489.
+Primary paper inspected: https://arxiv.org/html/1604.03744 (v2).
+The original author demonstration was inspected at
+references/valse_original/VALSEdemo/VALSE.m. Its SHA-256 remains
+111937c11a3fbf5ce605c4dca480b71dcc5d355e0500edade49ed2442e6a0498.
+No author source bytes were changed. No MATLAB/Octave execution comparison
+has been performed: this is a Python paper-equation implementation, not a
+validated numerically equivalent execution of the author MATLAB code. No
+novelty or author-source licensing permission is asserted. The source-intake
+record remains valse_reference_intake.txt.
+
+API
+estimate_valse(y, m=None, max_iter=500, heuristic=2,
+               covariance_index='equation', variance_floor=1e-12)
+Inputs are observations and their increasing nonnegative integer indices.
+No true signal, true order, true noise, or path geometry is accepted.
+Candidate count L = N = max(m)+1; default m is 0,...,len(y)-1.
+Only Heuristic 2 is supported; other heuristic numbers raise ValueError.
+Output is a dict with y_estimate (observed reconstruction), x_estimate
+(integer indices 0:N-1), moments (N by active K), freqs, amps,
+gain_covariance (K by K), kappa, noise_var, gain_prior_var, iterations,
+converged, support (L booleans), support_history, stability and
+covariance_index. Frequencies are wrapped to [-pi,pi), a harmless periodic
+representation change for these integer moments. moments @ amps equals
+x_estimate. All moments use I_n(kappa)/I_0(kappa), preserving frequency
+uncertainty instead of replacing them with point-frequency steering atoms.
+
+Equation (17) covariance index
+The primary paper explicitly uses C[l,i] where both l and i are global active
+component identifiers. The MATLAB line 127 uses C(inz(other),i), while its C
+is L by L and i indexes a position within inz. Therefore the default Python
+mode uses C[other,inz[i]] to implement the equation. A selectable 'source'
+mode uses the original local-column choice and preserves source-style stale
+inactive covariance scratch entries. This option alone does not establish
+MATLAB numerical equivalence. A constructed noncontiguous support {1,4}
+test independently evaluates the expected quadratic log likelihood, varies
+component 4 over 101 frequencies, and verifies that its nonconstant part
+equals Re(eta^H a(theta)) for the equation-mode vector. The source-column
+choice gives a different vector in this example.
+
+Preserved algorithm details
+Sequential residual initialization with zero-filled autocorrelation; initial
+noise from lower-quarter Toeplitz eigenvalues; initial K=floor(L/2) for L>=2;
+all L candidates initialized; J diagonal fixed to M; Bernoulli-Gaussian
+support search starts empty at every iteration; the demonstration support
+cap K<M-1 for L>1; complex conjugation in cross terms and rank-one updates;
+sequential frequency updates with immediate writeback; gain/noise/prior
+variance updates; Heuristic 2 branch selection, MATLAB half-away-from-zero
+rounding, one Newton refinement, and curvature-derived VM concentration;
+relative reconstruction-change threshold 1e-6. Returned gains/covariance
+are from the final support step, and frequencies from the subsequent final
+frequency step, following the demonstration update schedule without an
+unreported final polishing solve. Converged reports the reconstruction
+stopping rule, not certified global optimality or exact ELBO convergence.
+
+Explicit numerical/interface changes
+1. No true-signal MSE logging. max_iter counts outer updates; the MATLAB t
+   counter additionally includes initialization. Default cap 500 is the
+   frozen check setting instead of the demonstration cap 5000.
+2. Observations are divided by max(abs(y)) during calculation and physical
+   means/variances are restored on return. This common real scaling is
+   analytically equivariant and avoids overflow/underflow of squared data.
+3. nu and tau have a floor 1e-12 in normalized units. Every applied floor
+   is counted. The optional variance_floor supports sensitivity checks.
+4. Scaled scipy.special.ive computes Bessel ratios. For kappa>1e6, use
+   exp(-n^2/(2*kappa)-n^2/(4*kappa^2)); every affected element is counted.
+   This explicit high-concentration asymptotic avoids nonfinite AMOS values
+   for enormous arguments. A boundary comparison at kappa=1000001 and
+   n=0,...,63 agrees with direct scaled Bessel ratios within 1e-11.
+5. Ainv uses the author three-piece Mardia-Jupp approximation, with resultant
+   clipped at 1-0.5/1e12 and concentration limited to 1e12. Resultant clipping
+   is counted. It is an approximation, not an exact numerical inverse.
+6. Noise update uses the stable residual plus covariance plus frequency-
+   uncertainty form of paper Eq. (24), rather than subtracting large squared
+   norms. Its equivalence to the expanded J/h expression is independently
+   tested. Roundoff-only negative 1-||a||^2/M is set to zero.
+7. Schur denominators have a floor 32*eps*max(1,M+nu/tau), with counts.
+   Support gains must exceed 1e-12 in log-objective units. A finite
+   max(100,100*L) flip guard raises rather than silently reporting success.
+   This guard was not triggered in completed numerical tests/stress checks.
+8. Uniform/empty frequency likelihoods and all-zero observations return
+   explicit finite solutions. For N<4 at least one covariance eigenvalue is
+   used; these tiny cases are numerical extensions outside the experiment.
+9. Kappa zero gives moment one at order zero and zero at nonzero integer
+   orders. Nonconcave frequency updates use the original non-Newton fallback
+   and are counted separately from numerical clips.
+
+Tests and evidence
+Command: D:\MiniConda\python.exe -m unittest test_valse_python -v
+Observed result: 14 tests passed (1.820 seconds on the recorded run).
+The suite includes:
+- approximate inverse-Bessel equation residual at piecewise boundaries;
+- VM moments versus independent 131072-point circle quadrature for
+  concentrations 0, .01, 1, 25, 1000 and orders -8,...,8;
+- finite extreme moments at concentrations through 1e12;
+- rank-one activation AND deletion versus independent direct support
+  covariance/mean solves, including noncontiguous supports;
+- strict objective ascent for the recorded support flips;
+- the Eq. (17) expected-log-likelihood covariance-index check above;
+- independent Eq. (24) frequency-uncertainty/noise-variance check;
+- exact single-harmonic Heuristic 2 phase and curvature concentration;
+- noiseless single-line reconstruction and noisy two-line reconstruction
+  from 20 missing-pattern samples on a length-32 grid;
+- pure noise, zero observations, amplitudes 1e-140 and 1e140, iteration cap,
+  invalid indices/nonfinite data, and finite source-mode output;
+- floor sensitivity 1e-10/1e-12/1e-14 on a fixed noisy vector, giving the
+  same reconstruction to 1e-12 because no variance floor is active there.
+These checks establish selected numerical identities and examples, not a
+general recovery guarantee or MATLAB cross-language equivalence.
+Recorded examples: noiseless single-line NMSE 1.4992822524e-15 after 6 outer
+iterations; the noisy missing-observation two-line NMSE 4.2224563432e-5 after
+28 iterations. The noiseless stopping-rule result retains positive inferred
+noise 7.2964618473e-8 and is not described as an exact zero-noise solution.
+
+Additional deterministic small stress check
+Generator seed 260113, M=16, frequencies [-.8,.5], two independent circular
+complex normal gains, additive circular noise scaled to each realized clean
+signal power, 20 runs per SNR. NMSE here is mean per-realization normalized
+error (not the energy-weighted aggregate used in the OFDM check):
+SNR dB      -5        0       10       20       40
+NMSE dB   0.41479  -4.14824 -16.30164 -26.96659 -46.96040
+Converged 20/20    20/20    20/20     20/20     20/20
+Max iters 64       143      50        40        40
+Mean K    1.10     2.20     2.15      1.95      2.00
+No numerical exception, Schur clipping or variance-floor clipping occurred.
+Nonconcave fallback counts were 1,2,1,0,0. The 40 dB cases used 16432
+large-concentration moment elements. This is a sanity relationship, not
+a reproduction of a published VALSE figure or an OFDM performance claim.
+
+Frozen pilot-domain campaign
+valse_pilot_check.py implements the VALSE paragraph in confirmation_protocol.
+Three seeds 1220261113/114/115; 150 independent groups per profile/SNR/seed;
+profiles sparse_integer, fractional_sparse, close_fractional; SNR 10/20 dB.
+Each group has 16 independently faded blocks with shared delays and thermal
+variance. All methods see the same target pilot block. Delay-domain EB and
+fixed refined baseline use the 16-block residual variance; refined known-
+noise is an oracle-noise reference; VALSE estimates its own variance from
+one target block. This differing calibration resource is explicitly logged.
+The refined estimator retains [0,12] delay support, 0.25 grid, <=6 paths,
+dogbox max_nfev60 and the frozen BIC choice. VALSE uses L=16, Heuristic2,
+equation covariance indexing, max_iter500 and unrestricted circular frequency
+support (equivalent to delay modulo16), without adding the refined support
+restriction or giving it true order/noise information.
+
+Pilot ordering/mapping
+Sort signed pilot frequencies: f_p=-1/2+p/16, p=0,...,15.
+Then exp(-j2*pi*f_p*tau) = exp(j*pi*tau)*exp(-j2*pi*p*tau/16).
+The constant phase is absorbed into complex gain. Thus VALSE observes the
+same samples with m=p; its posterior moments reconstruct exactly those
+integer compressed pilot positions. An explicit atom identity audit is run.
+No noninteger moment extrapolation to the other 48 tones is attempted, and
+no VALSE full-CFR/BER result is reported.
+
+Campaign records
+results/valse_check1..3/results.json record source hashes, settings, numerical
+versions, BLAS thread pools, every VALSE support/history/convergence/variance/
+kappa/frequency/stability result, and baseline optimizer diagnostics.
+frame_metrics.npz retains per-group pilot MSE and clean pilot energy for each
+method, noise estimates, VALSE convergence/iterations/support, baseline order.
+Aggregate ratio-of-sums pilot NMSE and 2000 paired group-bootstrap percentile
+intervals are saved by the aggregate command under
+results/valse_check_summary/summary.json and paired_bootstrap.json. Negative
+VALSE-minus-refined dB differences favor VALSE. Bootstrap seed 1320261113.
+All nonconvergence cases and failed refined optimization candidates are kept.
+Intervals are exploratory implementation checks, without a multiplicity-
+adjusted significance claim. Smoke-test results in results/valse_smoke and
+results/valse_smoke_summary are excluded from these campaign aggregates.
+An independent regeneration of all 18 smoke groups reproduces pilot truth
+energy within 4.44e-16 and EB pilot MSE within 2.78e-17. Atom mapping errors
+are <=7.17e-15. All three loaded BLAS/OpenMP thread pools reported one thread.
+
+Completed campaign results (450 groups per cell; 2700 VALSE fits total)
+Pilot NMSE in dB, always ratio of sums over the same target pilot observations:
+profile/SNR          EB residual16  refined residual16  refined known  VALSE
+sparse_integer/10       -14.86454       -14.44172         -14.55295    -14.29791
+sparse_integer/20       -24.97720       -24.86143         -24.85676    -23.86215
+fractional_sparse/10    -10.95095       -14.08831         -14.56918    -14.46158
+fractional_sparse/20    -13.76373       -22.13466         -24.97426    -23.92034
+close_fractional/10     -10.74871       -12.75764         -13.23687    -12.96874
+close_fractional/20     -13.81620       -18.92179         -23.83453    -19.84580
+
+VALSE converged under the stopping rule in 2688/2700 cases. The 12 capped
+cases were retained: sparse_integer 10/20 dB, 1 each; fractional_sparse
+10 dB, 1; close_fractional20 dB, 9. No variance-floor, prior-floor, resultant
+or Schur clipping was reported in the campaign. There were 70 nonconcave
+frequency-update fallbacks and 1904 large-kappa asymptotic moment elements.
+At 20 dB the VALSE mean inferred-noise/true-noise ratios were 1.12893,
+1.17244 and 1.93561 in sparse_integer, fractional_sparse and close_fractional.
+The corresponding median ratios were 1.00280, 1.07558 and 1.43322.
+
+For fractional_sparse at20 dB, VALSE minus refined-residual16 pilot NMSE was
+-1.78568 dB (paired percentile95% interval [-2.3473,-1.1888]); versus the
+known-noise refined reference it was +1.05392 [0.5840,1.5517] dB.
+For close_fractional at20 dB these contrasts were -0.92401
+[-1.3575,-0.4841] dB and +3.98873 [3.5781,4.4123] dB, respectively.
+For sparse_integer at20 dB they were +0.99928 [0.5957,1.4229] dB and
++0.99461 [0.5942,1.4047] dB. All 12 contrasts and the raw paired data are
+retained; no post hoc parameter selection was made using these results.
+
+Refined selected-optimizer failures remain in the metrics. At close_fractional
+20 dB they were 2/450 for residual16 and 29/450 for known noise; total failed
+candidate optimization counts in that cell were 5 and 149. These local
+optimization results do not establish an optimum receiver envelope.
+
+Final independent aggregate audit passed: all source hashes still match;
+the three seeds match the frozen list; each of 24 method/cell arrays has
+450 finite error/energy pairs; paired truth energies are identical; merged
+arrays exactly concatenate the three source runs; all reported pilot NMSEs
+recompute to 1e-12; support arrays are450x16; iteration counts are1..500;
+all recorded compute thread pools use one thread. The three simultaneous
+jobs took400.32,402.02,404.58 seconds wall time on the shared machine; these
+are campaign timings, not isolated algorithm performance benchmarks.

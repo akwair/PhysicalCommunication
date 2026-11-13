@@ -1,0 +1,103 @@
+{
+  "status": "gaussian_moment_audit_not_novel_theorem",
+  "groups": 20000,
+  "seed": 920261113,
+  "results": [
+    {
+      "rho": 0,
+      "blocks": 1,
+      "mean_ratio": 8.750836876142456,
+      "relative_std": 7.782422773180482,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.76707635854295
+    },
+    {
+      "rho": 0,
+      "blocks": 4,
+      "mean_ratio": 8.750007135385237,
+      "relative_std": 3.8758018191186885,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 3.883538179271475
+    },
+    {
+      "rho": 0,
+      "blocks": 16,
+      "mean_ratio": 8.774768729855522,
+      "relative_std": 1.9548709887749953,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 1.9417690896357376
+    },
+    {
+      "rho": 0.9,
+      "blocks": 1,
+      "mean_ratio": 8.762729976985964,
+      "relative_std": 7.688697865576366,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.76707635854295
+    },
+    {
+      "rho": 0.9,
+      "blocks": 4,
+      "mean_ratio": 8.801437078530721,
+      "relative_std": 6.676826768963631,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 6.715572372482669
+    },
+    {
+      "rho": 0.9,
+      "blocks": 16,
+      "mean_ratio": 8.784881834682437,
+      "relative_std": 4.861048697668534,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 4.919581717569586
+    },
+    {
+      "rho": 0.99,
+      "blocks": 1,
+      "mean_ratio": 8.840873402380428,
+      "relative_std": 7.8263412843955145,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.76707635854295
+    },
+    {
+      "rho": 0.99,
+      "blocks": 4,
+      "mean_ratio": 8.810088811834381,
+      "relative_std": 7.528184481337114,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.472654995186657
+    },
+    {
+      "rho": 0.99,
+      "blocks": 16,
+      "mean_ratio": 8.817323453762036,
+      "relative_std": 7.235010872791883,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.134529366000147
+    },
+    {
+      "rho": 1.0,
+      "blocks": 1,
+      "mean_ratio": 8.820743634900973,
+      "relative_std": 7.855237428966667,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.76707635854295
+    },
+    {
+      "rho": 1.0,
+      "blocks": 4,
+      "mean_ratio": 8.823635956069857,
+      "relative_std": 7.670120347081761,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.564684365814717
+    },
+    {
+      "rho": 1.0,
+      "blocks": 16,
+      "mean_ratio": 8.824203167313996,
+      "relative_std": 7.604836781518421,
+      "predicted_mean_ratio": 8.774734946760603,
+      "predicted_relative_std": 7.513234533351317
+    }
+  ]
+}

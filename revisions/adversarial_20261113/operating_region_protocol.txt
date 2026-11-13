@@ -1,0 +1,27 @@
+Frozen design, 2026-11-13, before new simulations.
+Purpose: address R1-01/02 by measuring the bias/variance crossover and the
+effect of window dimension and pilot budget, conditional on known model
+geometry. This is a sensitivity study, not a data-driven stopping algorithm.
+
+N=64 signed-frequency OFDM, M in {16,32} equispaced unit pilots. Independent
+proper Gaussian gains, powers=(0.5,0.3,0.2), delays=(0,7+delta,11+delta).
+delta=0,0.1,...,0.9; integer basis lengths L=12,13,14,15. Noise v=10^(-SNR/10)
+at SNR=10,20 dB. Compute all 160 geometry/noise cells analytically and
+calibration normalized MSE for T=1,4,16: (b^2+A/T)/v^2; b=tr(S)/(M-L),
+A=[tr(S^2)+2v tr(S)+v^2(M-L)]/(M-L)^2. Crossover Tstar=A/b^2 for b>0;
+matched b=0 is represented by null Tstar (infinity), never clipped to a
+finite plotted value. Record raw leakage tr(S), bias, variance and crossover.
+
+Monte Carlo validation: delta=0,.2,.5,.9; L=12,15; M=16,32; SNR=20 dB.
+These 16 cases use 20000 independent groups each, 16 blocks per group.
+Compute T=1,4,16 from nested blocks. Generate actual gains plus independent
+pilot noise, project observations, retain group noise estimates, and compare
+means, variances and MSEs with analytic predictions. Fixed seed=1320261113,
+SeedSequence spawn ordered by M,delta,L; chunk size1000. Include all cases.
+Report Monte Carlo standard errors from independent groups. No reconstruction,
+BER, random geometry, or standardized channel generality inferred here.
+
+Figure: four panels (M16 and M32 rows); normalized MSE versus offset at
+T16, SNR20 on left, Tstar versus offset on right, all four L curves. Mark
+Monte Carlo MSE checks for L12 and15. Archive all 10dB and T1/T4 values even
+though figure focuses on 20dB/T16. Export vector PDF/SVG and 300dpi PNG.

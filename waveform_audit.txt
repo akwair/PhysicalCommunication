@@ -1,0 +1,127 @@
+Finite-CP fractional-delay audit (2026-11-13)
+Scope: independent scientific model check, not a paper or novelty claim.
+Files: waveform_model.py and test_waveform_model.py.
+
+1. What is physically specified
+The continuous complex-baseband OFDM symbol is a finite sum of tones:
+ s_b(t) = N^(-1/2) sum_k X_b[k] exp(j 2 pi q_k t/N), -C <= t < N,
+where q_k=N*fftfreq(N), and consecutive symbols occupy disjoint windows of
+length N+C. Time and delays are measured in base-rate sample periods. Thus
+for N=64, q=[0,...,31,-32,...,-1]. The -32 Nyquist tone is explicitly chosen;
+choosing +32 describes a different continuous waveform between sample times.
+Each symbol includes its own finite cyclic prefix. The burst is zero outside
+its finite duration; the simulator never wraps the full burst around itself.
+
+The ideal channel is r(t)=sum_p g_p s(t-tau_p), tau_p>=0. Each batch entry has
+one channel fixed over its burst, a valid special case of block-static fading.
+Sampling is exactly synchronized. There is no intra-symbol time variation,
+CFO, phase noise, TX/RX filter, timing error, RF impairment, or channel coding.
+Rectangular switching has spectral sidelobes: the overall transmitted burst
+is not globally bandlimited. This check does NOT establish a filtered analog
+TX/RX chain, a hardware model, or 3GPP compliance. Adding pulse shaping or
+analog filtering requires treating its effective memory and receive timing.
+
+2. Independent time-domain construction and scaling
+Signed frequency bins are embedded in a length N*S spectrum, with all other
+bins zero. A unitary IFFT times sqrt(S) produces samples of the tone sum at
+t=m/S. Every Sth useful sample is exactly ifft(X,norm='ortho'). The useful
+symbol's mean sample power is mean(abs(X)^2); its oversampled energy divided
+by S is sum(abs(X)^2). The finite CP adds duration and energy. No CP overhead
+is hidden in an Eb/N0 claim; the research v parameter is a per-bin noise
+variance with nominal E|H[k]|^2=1 and unit-energy symbols.
+
+Every tau must satisfy S*tau integer, within roundoff. Unsupported delays
+raise an error rather than being rounded. With S=20, delays [0,7.35,11.2]
+are represented exactly as [0,147,224] high-rate samples. The concatenated
+burst is delayed by literal linear array shifts, summed across paths,
+sampled every S positions, stripped of each CP, then transformed by a
+unitary FFT. The transmit/channel path never calls channel_response or
+multiplies X by a per-subcarrier response.
+
+For the ideal delay-only channel, C>=max(tau) ensures all delayed FFT input
+samples remain inside the current symbol's CP extension. Therefore
+ H[k]=sum_p g_p exp(-j 2 pi fftfreq(N)[k] tau_p), Y[k]=X[k]H[k].
+This equality follows for any real delay under the specified continuous
+waveform. The numerical construction checks representable delays on a finite
+oversampling grid. CP=16 is sufficient for max(tau)=11.2; CP=8 is insufficient.
+With a changed previous OFDM symbol, the current output changes only in the
+insufficient-CP test, directly demonstrating inter-symbol interference.
+
+Noise is omitted from the waveform check to isolate this equivalence.
+Independent CN(0,v) noise at the base-rate receiver samples remains CN(0,v I)
+after the unitary FFT. The simulator does not assign a physical analog PSD to
+independent oversampled noise or model receive filtering of that noise.
+
+3. Unsigned versus signed frequencies
+Original noise_study.fourier uses k/N for k=0,...,N-1. Centered baseband uses
+f_k=k/N for k<N/2 and f_k=k/N-1 for k>=N/2 (even N). On the negative half,
+ exp(-j 2 pi f_k tau) = exp(-j 2 pi k tau/N) exp(+j 2 pi tau).
+The two agree for integer tau, but differ for fractional tau. Integer-only
+tests cannot select the physical continuous-time convention. For k=48,
+N=64, tau=0.5, a physical -1/4 tone produces exp(+j pi/4); the unsigned
+formula produces its negative. A single-tone waveform test detects this.
+
+The unsigned response is not intrinsically impossible: it describes an
+alternate uncentered [0,Fs) complex-tone synthesis. It must not be combined
+with centered baseband interpolation without changing the interpretation.
+The new function delay_atoms uses the centered convention explicitly.
+
+4. Assessment of the existing leakage-bias claim
+The projection identity is valid in either convention:
+ E[vhat]=v+tr(Q B P B^H)/(M-L), Q=I-A(A^H A)^(-1)A^H.
+Fractional physical delays need not lie in the span of L integer-delay atoms,
+even when the physical maximum delay lies below the CP. Thus sufficient CP
+does not remove integer-subspace model leakage. The claim is a standard
+projection identity and carries no novelty implication.
+
+For the CURRENT configuration N=64, pilots=0,4,...,60, independent zero-mean
+path gains with diagonal P, this additive bias is exactly the same under
+the two frequency conventions. Let R shift the M=16 pilot rows by 8 places.
+Then B_signed=R B_unsigned diag(exp(j pi tau_p)), while R A=A D with
+D_ll=(-1)^l. Therefore Q commutes with R, and diagonal P cancels the per-path
+unit phases in the trace. This proves equality, which is also checked by
+independent numerical projections. Do not generalize it to arbitrary pilot
+masks, missing subcarriers, or correlated path coefficients.
+
+For delays [0,7.35,11.2], powers [0.5,0.3,0.2]:
+ L=12: additive E[vhat]-v = 0.07774734946760602.
+ L=15: additive E[vhat]-v = 0.024328667084120167.
+At v=0.01 the expected vhat/v is about 8.774735 and 3.432867, respectively.
+Consequently the original high-SNR residual bias is NOT an artifact that
+disappears when the frequency indexing is corrected. Existing numeric
+rankings are still model-specific; this audit does not rerun or certify them.
+
+5. Observed focused verification
+Environment: Python 3.13.9, NumPy 2.1.3.
+Command: python -m pytest -q test_waveform_model.py
+Observed: 14 passed in 0.30 s, exit code 0.
+Coverage: even/odd FFT mappings and scaling; integer-delay agreement with
+independent base-rate linear convolution; fractional-delay frequency-model
+agreement for independent adjacent symbols and multiple channels; explicit
+negative-frequency tone; CP insufficiency and previous-symbol dependence;
+off-grid rejection; signed/unsigned bias invariance; Monte Carlo validation
+of the signed-model projection bias.
+
+Command: python waveform_model.py (seed=1485, 8 bursts x 3 symbols, S=20)
+ Integer response maximum absolute error: 8.44061612104073e-15.
+ Fractional response maximum absolute error: 7.216449660063518e-15.
+ CP=8 relative RMS frequency-model discrepancy after first symbol:
+ 0.15110163569529036.
+These are reproducibility checks for the declared ideal waveform, not an
+estimate of practical RF mismatch or communications performance.
+
+6. Interfaces for further experiments
+delay_atoms(delays,n_fft=64): N x paths signed-frequency dictionary.
+channel_response(delays,gains,n_fft=64): (...,N) response; gains (...,paths).
+modulate(symbols,cp_samples=16,oversample=20): finite CP waveform.
+receive_ofdm(symbols,delays,gains,cp_samples=16,oversample=20): FFT outputs.
+ symbols shape (...,number_of_symbols,N); batch axes broadcast with gains.
+projection_noise_bias(delays,powers,pilots,length,n_fft=64): additive bias.
+audit_report(seed=1485): small JSON-compatible result dictionary.
+
+Frequency-ordering reference (official primary documentation; inspected):
+https://numpy.org/doc/stable/reference/generated/numpy.fft.fftfreq.html
+FFT sign and normalization reference (official primary documentation):
+https://numpy.org/doc/stable/reference/routines.fft.html
+The model equations and invariance argument above are derived here from
+the explicitly defined waveform, not attributed as a new result.

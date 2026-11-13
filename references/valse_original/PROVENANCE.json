@@ -1,0 +1,32 @@
+{
+  "retrieval_date": "2026-11-13",
+  "portal": "https://vbn.aau.dk/en/publications/variational-bayesian-inference-of-line-spectra/",
+  "portal_link_label": "VALSEdemo v2 (corrected some numerical issues)",
+  "portal_original_link": "https://vbn.aau.dk/files/272166737/VALSEdemo.zip",
+  "download_url": "https://vbn.aau.dk/ws/files/272166737/VALSEdemo.zip",
+  "final_url": "https://vbn.aau.dk/ws/files/272166737/VALSEdemo.zip",
+  "http_headers": {
+    "Date": "Fri, 13 Nov 2026 08:26:44 GMT",
+    "Content-Type": "multipart/x-zip",
+    "last-modified": "Mon, 09 Nov 2026 08:13:12 GMT"
+  },
+  "files": [
+    {
+      "file": "VALSEdemo.zip",
+      "bytes": 5435,
+      "sha256": "5697163cdc2d6f11d2cea0e4900441d76ca731da1c786bf08f5196c57157c3c5"
+    },
+    {
+      "file": "VALSEdemo/demo.m",
+      "bytes": 2273,
+      "sha256": "13e8b981869fbd50881bf218c976efc68f35e2d9e6ea4866387cc4c0f5b2ed72"
+    },
+    {
+      "file": "VALSEdemo/VALSE.m",
+      "bytes": 11688,
+      "sha256": "111937c11a3fbf5ce605c4dca480b71dcc5d355e0500edade49ed2442e6a0498"
+    }
+  ],
+  "license_status": "No explicit license file or reuse license text found in the archive. Source contains author attribution. Kept unchanged for local research inspection; do not label as permissively licensed or redistribute in a publication/repository without resolving terms.",
+  "execution_status": "Downloaded and read only. Author MATLAB source has not been executed or modified."
+}

@@ -1,0 +1,70 @@
+Physical Communication: format and upload verification
+Checked: 2026-11-13 (Asia/Shanghai).
+
+CURRENT FILE CHECKS
+- Main PDF: 18 pages; elsarticle preprint class, 11 pt, single column.
+- Abstract: 200 whitespace-delimited tokens; no citations.
+- Keywords: 5.
+- Highlights: 4; lengths excluding bullet marker: 81, 77, 74, 80 characters.
+- Main source includes authors, affiliation, corresponding-author email,
+  CRediT, funding, competing-interest, data/code and AI declarations.
+- User confirmed content and declarations; author-completion placeholders
+  were removed. This records author confirmation, not independent verification.
+- LaTeX ZIP: 17 files, all at one directory level; 4 vector PDF figures;
+  .tex, .bib and .bbl files present. ZIP integrity checked.
+- Latest main compilation: no undefined references or overfull boxes.
+- Submission files are in output/submission/.
+
+VERIFIED PUBLISHER-WIDE REQUIREMENTS
+1. Highlights: 3-5 bullets, each at most 85 characters including spaces;
+   separate editable source file with Highlights in the filename. Current
+   text satisfies these limits. Select the Highlights upload item when offered.
+   Whether required, and accepted source extensions, depend on the journal
+   and live submission interface; TXT acceptance is not certified.
+   https://www.elsevier.support/publishing/answer/how-do-i-include-highlights-with-my-manuscript
+2. Elsevier provides elsarticle. Most journals permit PDF initially; this is
+   not a journal-specific guarantee. Where PDF is accepted, upload the PDF
+   as Manuscript and the archive as LaTeX source files. Where PDF is restricted,
+   upload TeX/BibTeX/style files as Manuscript, images as Figure, and table
+   TeX files as Table, according to available interface categories.
+   All LaTeX submission files must be at one directory level. Do not classify
+   the main LaTeX sources as supplementary material.
+   https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions
+3. AI declarations identify tools, purposes and human oversight. Research
+   use should also be described in Methods. The current manuscript says
+   debugging assistance; historical project records describe broader use.
+   Author confirmation alone does not independently reconcile that difference.
+   The current declaration was left unchanged in this format/upload task.
+   https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+
+JOURNAL-SPECIFIC CHECK: NOT FULLY VERIFIED
+The official Guide for Authors returned HTTP 403 through web retrieval.
+A real browser also received a ScienceDirect/Cloudflare content error.
+The alternate Elsevier guide URL and journal Insights page were inaccessible.
+Search did not yield dependable current official journal-specific requirements.
+No old special-issue call or third-party template was treated as current policy.
+https://www.sciencedirect.com/journal/physical-communication/publish/guide-for-authors
+
+Therefore the following remain unverified, rather than certified as passed:
+- exact abstract/keyword limits and article page/word limit;
+- single/double anonymous review and title-page separation;
+- whether Highlights and/or a graphical abstract are mandatory;
+- exact reference style and research-data policy tier;
+- allowed upload extensions, size limits and mandatory interface fields.
+No graphical abstract is supplied. A graphical abstract has not been assumed
+optional. Check these items in the official guide/live interface before journal
+submission. Removing draft placeholders does not waive publisher requirements.
+
+UPLOAD MAP (subject to actual Editorial Manager categories)
+PhysicalCommunication.pdf -> Manuscript, if PDF is accepted.
+PhysicalCommunication_LaTeX.zip -> LaTeX source files, if archive upload is offered.
+Cover_letter.txt -> Cover Letter; paste into the field or use an accepted format.
+Highlights.txt -> Highlights; use an accepted editable format if TXT is rejected.
+Code/data -> repository or appropriate supplementary-data category, not Manuscript.
+Author metadata and declarations -> also enter in the online fields when requested.
+Review the system-generated PDF before journal submission.
+
+REMOTE REPOSITORY
+Destination: https://github.com/akwair/PhysicalCommunication
+GitHub upload is distinct from journal submission and does not create a DOI.
+Repository access/visibility for reviewers must be arranged as needed.

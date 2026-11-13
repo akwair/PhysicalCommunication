@@ -1,0 +1,35 @@
+Frozen confirmation/control protocol — 2026-11-13
+
+This protocol is written before running cp_confirmation.py. It follows the
+exploratory stage-3 results and does not retroactively preregister those results.
+No parameter will be selected on the confirmation samples.
+
+Question: under the same continuous-delay model, does a signal-cancelling CP
+noise statistic remove the calibration bias, and how does that change the
+fixed continuous-delay receiver? The CP statistic is a conventional control,
+not a proposed new estimator.
+
+N=64, CP=16, all physical delays <=12, last four CP samples paired with the
+last four useful-symbol samples. Use the same FFT-domain noise in pilots,
+data, and useful-symbol tail; independent CP receiver noise. Difference/2
+energy is unbiased thermal variance. Pool T=16 independently faded blocks.
+Same target block, channels, bits, and noise for every method.
+
+Profiles fractional_sparse and close_fractional; SNR 10 and 20 dB.
+Seeds 1120261113, 1120261114, 1120261115; 300 groups per cell per seed.
+Fixed refined baseline: grid step .25, <=6 paths, dogbox max_nfev60, BIC as in
+the stage3 code. Compare refined residual16, CP16, and known-noise reference;
+also show integer EB with residual16 and CP16. Log selected/candidate optimizer
+failures. Primary contrast: refined residual16 versus CP16 at 20 dB in each
+profile. Paired 2000-resample percentile bootstrap over groups. Report all
+four cells and no multiplicity-adjusted significance claim.
+
+VALSE implementation check: separately compare pilot-domain reconstruction
+and inferred noise using sorted signed pilot frequencies, represented by
+integer indices m=0,...,15. Do not extrapolate uncertain frequencies to data
+tones or claim a full-CFR/BER comparison from this representation. 150 groups
+per cell, 3 seeds 1220261113/114/115, profiles sparse_integer,
+fractional_sparse, close_fractional; SNR10/20. Implementation equation mode,
+Heuristic2, max_iter500, relative reconstruction tolerance1e-6. Record support,
+iteration/convergence and stability interventions. Report this as a Python
+paper-equation implementation, not author-code numerical equivalence.

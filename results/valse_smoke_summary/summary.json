@@ -1,0 +1,493 @@
+{
+  "status": "exploratory_implementation_check_not_author_runtime_equivalence",
+  "source_directories": [
+    "results\\valse_smoke"
+  ],
+  "seeds": [
+    221
+  ],
+  "groups_per_cell": 3,
+  "source_hashes": {
+    "valse_pilot_check.py": "4e1fe77288b5d123697ea49092ccf316eaa0af502e5f3c0c23e6b731ad45db14",
+    "valse_python.py": "deb3c6e279011dc0e29b7227df36167b97f017a96a9703dc41124cca3151ea7f",
+    "test_valse_python.py": "1c9b95894aa6896e39fc256be034ae535b3d76aa9e5041e2d20d81d8468923d7",
+    "offgrid_baseline.py": "0d1a1f5d8bf09942c0d9537d1868d1b2f576cc2dd1bb531ba01ff858183bbe3d",
+    "stage3_study.py": "fb9eb2c2a9e3c3567f7df7baacb3f243cc12a6e2863776a49c88a81bc91bc50e",
+    "noise_study.py": "faa294dcd979d5b21367533c3d1c3815acf61596c0e502d22f2fa7b2ead9ff60",
+    "pilot_ofdm.py": "9f4eee90a8e45940f19cb6306310878122244d08fd3f2c37cd601f19d8a19bff",
+    "confirmation_protocol.txt": "acc21dd50066b344f5f3ee202188294463cc41caaffa4a30b79c90fbee48fb8c"
+  },
+  "results": [
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -18.499819696205183
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -15.609176801290378,
+      "mean_order": 2.6666666666666665,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.07233670000277925
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -15.609176801290378,
+      "mean_order": 2.6666666666666665,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.07430219999878318
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -15.575030331885888,
+      "mean_noise_ratio": 1.0131623498572233,
+      "median_noise_ratio": 0.9928763209552866,
+      "mean_order": 2.6666666666666665,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 37.666666666666664,
+      "max_iterations": 41,
+      "stability": {},
+      "total_seconds": 0.5808921999996528
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -26.24733022717195
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -26.991063783607018,
+      "mean_order": 3.0,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.045431700000335695
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -26.991063783607018,
+      "mean_order": 3.0,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.04128190000119503
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -26.755848399914303,
+      "mean_noise_ratio": 0.8167003874233892,
+      "median_noise_ratio": 0.8453495928422005,
+      "mean_order": 3.0,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 35.666666666666664,
+      "max_iterations": 38,
+      "stability": {},
+      "total_seconds": 0.640712700002041
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -11.424343150440468
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -15.714952026680029,
+      "mean_order": 2.6666666666666665,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.03825510000024224
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -15.714952026680029,
+      "mean_order": 2.6666666666666665,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.08894140000120387
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -15.192994558067314,
+      "mean_noise_ratio": 0.9080777304178274,
+      "median_noise_ratio": 0.8931641782040686,
+      "mean_order": 2.6666666666666665,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 34.666666666666664,
+      "max_iterations": 38,
+      "stability": {
+        "nonconcave_frequency_updates": 1
+      },
+      "total_seconds": 0.6183639999981096
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -12.62178932567548
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -27.154670004747974,
+      "mean_order": 3.0,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.02799360000062734
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -27.154670004747974,
+      "mean_order": 3.0,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.0666440999993938
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -27.014058223743774,
+      "mean_noise_ratio": 0.806261583164118,
+      "median_noise_ratio": 0.9049428536436674,
+      "mean_order": 3.0,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 34.333333333333336,
+      "max_iterations": 41,
+      "stability": {},
+      "total_seconds": 0.6194292000000132
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -9.988095132351763
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -14.874277345793514,
+      "mean_order": 3.3333333333333335,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.07935429999997723
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -14.874277345793514,
+      "mean_order": 3.3333333333333335,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.1022181999978784
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -14.733266433526833,
+      "mean_noise_ratio": 1.1889288988911002,
+      "median_noise_ratio": 1.0343024837123678,
+      "mean_order": 3.3333333333333335,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 64.66666666666667,
+      "max_iterations": 132,
+      "stability": {},
+      "total_seconds": 1.271513399999094
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -14.37020084225874
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 3,
+      "pilot_nmse_db": -16.440215493313794,
+      "mean_order": 3.0,
+      "selected_optimizer_failures": 0,
+      "candidate_optimizer_failures": 0,
+      "total_seconds": 0.04990899999756948
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 3,
+      "pilot_nmse_db": -23.32752959946091,
+      "mean_order": 4.666666666666667,
+      "selected_optimizer_failures": 1,
+      "candidate_optimizer_failures": 2,
+      "total_seconds": 0.17612969999754569
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "method": "valse_equation",
+      "groups": 3,
+      "pilot_nmse_db": -17.78520863587654,
+      "mean_noise_ratio": 3.0482528070703996,
+      "median_noise_ratio": 3.26664329627931,
+      "mean_order": 3.6666666666666665,
+      "converged_groups": 3,
+      "nonconverged_groups": 0,
+      "mean_iterations": 180.33333333333334,
+      "max_iterations": 463,
+      "stability": {},
+      "total_seconds": 4.890197700002318
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.034146469404489295,
+      "percentile_95_ci_db": [
+        -0.27234906044427665,
+        0.19398918794376763
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.034146469404489295,
+      "percentile_95_ci_db": [
+        -0.27234906044427665,
+        0.19398918794376763
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.23521538369271675,
+      "percentile_95_ci_db": [
+        -0.25341326388462615,
+        1.6788381896922755
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "sparse_integer",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.23521538369271675,
+      "percentile_95_ci_db": [
+        -0.25341326388462615,
+        1.6788381896922755
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.5219574686127127,
+      "percentile_95_ci_db": [
+        -0.23899742895084441,
+        1.515292597738752
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.5219574686127127,
+      "percentile_95_ci_db": [
+        -0.23899742895084441,
+        1.515292597738752
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.14061178100419985,
+      "percentile_95_ci_db": [
+        -0.23589470839062,
+        0.31534239365565275
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "fractional_sparse",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.14061178100419985,
+      "percentile_95_ci_db": [
+        -0.23589470839062,
+        0.31534239365565275
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.1410109122666823,
+      "percentile_95_ci_db": [
+        -0.1458607213231965,
+        0.8232844453593409
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 10,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 0.1410109122666823,
+      "percentile_95_ci_db": [
+        -0.1458607213231965,
+        0.8232844453593409
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "reference": "refined_residual16",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": -1.3449931425627475,
+      "percentile_95_ci_db": [
+        -12.010230882552788,
+        0.2072386522136747
+      ],
+      "groups": 3,
+      "resamples": 2000
+    },
+    {
+      "profile": "close_fractional",
+      "snr_db": 20,
+      "reference": "refined_known_noise",
+      "contrast": "VALSE pilot NMSE dB minus comparator pilot NMSE dB; negative favors VALSE",
+      "difference_db": 5.542320963584367,
+      "percentile_95_ci_db": [
+        -5.483134329743403,
+        11.334052617150668
+      ],
+      "groups": 3,
+      "resamples": 2000
+    }
+  ],
+  "bootstrap_seed": 1320261113,
+  "bootstrap_unit": "independent calibration group with paired methods",
+  "multiplicity_adjusted": false,
+  "assumptions": {
+    "pilot_order": "ascending signed frequency [-0.5,...,0.4375]",
+    "valse_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "valse_heuristic": 2,
+    "valse_covariance_index": "equation",
+    "valse_max_iter": 500,
+    "residual_calibration_blocks": 16,
+    "valse_observation_blocks": 1,
+    "full_cfr_extrapolation": false,
+    "ber_comparison": false,
+    "refined_delay_support": [
+      0.0,
+      12.0
+    ],
+    "valse_frequency_support": "unrestricted circle; delay modulo 16",
+    "known_noise_reference_has_oracle_noise": true
+  },
+  "artifact_hashes": {
+    "results\\valse_smoke\\results.json": "cf64d853bb2079f70e63c7011b22cae007a69288a63c91681c92cd5904aa09cc",
+    "results\\valse_smoke\\frame_metrics.npz": "7fd58b766891fc95f23a6c112f4fd1faf137a436690098d94abc34796b22fb83"
+  }
+}

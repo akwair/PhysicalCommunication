@@ -1,0 +1,26 @@
+VALSE iteration-budget sensitivity protocol (2026-11-13)
+
+Motivation: the inspected author demonstration VALSEdemo/VALSE.m sets T=5000.
+The existing Python Heuristic-2 implementation check used 500 outer updates.
+Of its 2700 runs, 12 reached that limit without meeting the relative-change
+criterion. This audit changes only max_iter to 5000 for those 12 exact inputs.
+
+Before fitting, verify the campaign's recorded source hashes. Recreate all
+six cells in the original profile/SNR order from each original seed and frame
+count, consuming all generator draws. Check truth energy for every one of the
+2700 frames against saved metrics. Save the selected target observations and
+truth to a separate NPZ. First repeat each capped case at max_iter=500 and
+compare its pilot error, noise variance, support, support history, convergence,
+iteration count, frequencies, kappas and numerical-intervention counters to
+the recorded case. Any mismatch aborts the audit rather than replacing data.
+
+For every selected case, rerun from the unchanged initialization with
+max_iter=5000, heuristic=2, covariance_index='equation'. Record all outputs and
+failure/cap flags. No run is excluded. Retain the original 2700-run campaign
+unchanged. Form a separate sensitivity aggregate by replacing only the 12
+capped entries. Report all six per-cell pilot NMSEs, inferred-noise ratios,
+model orders and convergence counts before/after. Unchanged converged cases
+would stop before 500 at either limit under this deterministic stopping rule.
+
+This verifies the local Python budget choice, not equivalence to executing
+the MATLAB author implementation. Timing is descriptive local CPU timing.

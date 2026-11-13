@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{hansen2018iterative}
+T.~L. Hansen, P.~B. J{\o}rgensen, M.-A. Badiu, B.~H. Fleury,
+  \href{https://arxiv.org/abs/1507.02954}{An iterative receiver for {OFDM} with
+  sparsity-based parametric channel estimation}, IEEE Transactions on Signal
+  Processing 66~(20) (2018) 5454--5469.
+\newblock \href {https://doi.org/10.1109/TSP.2018.2868314}
+  {\path{doi:10.1109/TSP.2018.2868314}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1507.02954}
+
+\bibitem{badiu2017valse}
+M.-A. Badiu, T.~L. Hansen, B.~H. Fleury,
+  \href{https://arxiv.org/abs/1604.03744}{Variational bayesian inference of
+  line spectra}, IEEE Transactions on Signal Processing 65~(9) (2017)
+  2247--2261.
+\newblock \href {https://doi.org/10.1109/TSP.2017.2655489}
+  {\path{doi:10.1109/TSP.2017.2655489}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1604.03744}
+
+\bibitem{mamandipoor2016nomp}
+B.~Mamandipoor, D.~Ramasamy, U.~Madhow,
+  \href{https://arxiv.org/abs/1509.01942}{Newtonized orthogonal matching
+  pursuit: Frequency estimation over the continuum}, IEEE Transactions on
+  Signal Processing 64~(19) (2016) 5066--5081.
+\newblock \href {https://doi.org/10.1109/TSP.2016.2580523}
+  {\path{doi:10.1109/TSP.2016.2580523}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1509.01942}
+
+\bibitem{zhu2019mnomp}
+J.~Zhu, L.~Han, R.~S. Blum, Z.~Xu,
+  \href{https://arxiv.org/abs/1802.01266}{Multi-snapshot newtonized orthogonal
+  matching pursuit for line spectrum estimation with multiple measurement
+  vectors}, Signal Processing 165 (2019) 175--185.
+\newblock \href {https://doi.org/10.1016/j.sigpro.2019.07.012}
+  {\path{doi:10.1016/j.sigpro.2019.07.012}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1802.01266}
+
+\bibitem{upadhya2016risk}
+K.~Upadhya, C.~S. Seelamantula, K.~V.~S. Hari,
+  \href{https://arxiv.org/abs/1410.6028}{A risk minimization framework for
+  channel estimation in {OFDM} systems}, Signal Processing 128 (2016) 78--87.
+\newblock \href {https://doi.org/10.1016/j.sigpro.2016.03.012}
+  {\path{doi:10.1016/j.sigpro.2016.03.012}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1410.6028}
+
+\bibitem{cui2006pdpnoise}
+T.~Cui, C.~Tellambura,
+  \href{https://authors.library.caltech.edu/records/akrh7-ad260}{Power delay
+  profile and noise variance estimation for {OFDM}}, IEEE Communications
+  Letters 10~(1) (2006) 25--27.
+\newblock \href {https://doi.org/10.1109/LCOMM.2006.1576558}
+  {\path{doi:10.1109/LCOMM.2006.1576558}}.
+\newline\urlprefix\url{https://authors.library.caltech.edu/records/akrh7-ad260}
+
+\bibitem{gao2014superresolution}
+Z.~Gao, L.~Dai, Z.~Lu, C.~Yuen, Z.~Wang,
+  \href{https://arxiv.org/abs/1507.05441}{Super-resolution sparse {MIMO-OFDM}
+  channel estimation based on spatial and temporal correlations}, IEEE
+  Communications Letters 18~(7) (2014) 1266--1269.
+\newblock \href {https://doi.org/10.1109/LCOMM.2014.2325027}
+  {\path{doi:10.1109/LCOMM.2014.2325027}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1507.05441}
+
+\bibitem{zhang2020mdvalse}
+Q.~Zhang, J.~Zhu, N.~Zhang, Z.~Xu,
+  \href{https://arxiv.org/abs/1912.11759}{Multidimensional variational line
+  spectra estimation}, IEEE Signal Processing Letters 27 (2020) 945--949.
+\newblock \href {https://doi.org/10.1109/LSP.2020.2995107}
+  {\path{doi:10.1109/LSP.2020.2995107}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1912.11759}
+
+\bibitem{zhang2021heteroscedastic}
+Q.~Zhang, J.~Zhu, Y.~Gu, Z.~Xu,
+  \href{https://arxiv.org/abs/1912.11738}{Gridless variational
+  direction-of-arrival estimation in heteroscedastic noise environment}, IEEE
+  Journal of Oceanic Engineering 46~(4) (2021) 1313--1329.
+\newblock \href {https://doi.org/10.1109/JOE.2021.3062160}
+  {\path{doi:10.1109/JOE.2021.3062160}}.
+\newline\urlprefix\url{https://arxiv.org/abs/1912.11738}
+
+\bibitem{wan2022jccdvalse}
+L.~Wan, J.~Zhu, E.~Cheng, Z.~Xu, \href{https://arxiv.org/abs/2107.07101}{Joint
+  {CFO}, gridless channel estimation and data detection for underwater acoustic
+  {OFDM} systems}, IEEE Journal of Oceanic Engineering 47~(4) (2022)
+  1215--1230.
+\newblock \href {https://doi.org/10.1109/JOE.2022.3162025}
+  {\path{doi:10.1109/JOE.2022.3162025}}.
+\newline\urlprefix\url{https://arxiv.org/abs/2107.07101}
+
+\end{thebibliography}
