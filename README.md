@@ -12,6 +12,7 @@ Authors: Yuxiao Kuang (corresponding author) and Shengming Ni.
 - [Flat LaTeX source archive](output/submission/PhysicalCommunication_LaTeX.zip)
 - [Cover letter](output/submission/Cover_letter.docx)
 - [Highlights](output/submission/Highlights.docx)
+- [Author biographies](output/submission/Author_biographies.docx)
 - [Declaration of competing interests](output/submission/Declaration_of_competing_interests.docx)
 - [Format and upload verification](manuscript/journal_check.txt)
 
@@ -19,7 +20,7 @@ The submission directory is the current delivery. Repository upload is not
 journal submission. Journal-specific requirements were checked against the
 official Guide for Authors PDF supplied on 2026-11-13. Both authors' photographs
 are supplied separately in `output/submission/author_photos/`. Both author
-biographies remain to be supplied. Repository access for editors and reviewers must be arranged:
+biographies are supplied in `output/submission/Author_biographies.docx`. Repository access for editors and reviewers must be arranged:
 the unauthenticated repository URL returned HTTP 404 during checking.
 
 ## Reproduction

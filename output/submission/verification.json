@@ -15,7 +15,6 @@
   "journal_specific_guide_verified": true,
   "guide_basis": "Author-supplied official Guide for Authors PDF, 19 pages, printed 2026-11-13 18:34",
   "remaining_author_items": [
-    "Biographies for Yuxiao Kuang and Shengming Ni",
     "editor/reviewer access to dataset repository",
     "retrieve official declaration-tool output; prepared local Word statement supplied"
   ],
@@ -26,7 +25,8 @@
   "docx_files": [
     "Cover_letter.docx",
     "Highlights.docx",
-    "Declaration_of_competing_interests.docx"
+    "Declaration_of_competing_interests.docx",
+    "Author_biographies.docx"
   ],
   "docx_rendering": "Microsoft Word PDF export; bundled LibreOffice unavailable",
   "docx_metadata_author_blank": true,
@@ -40,5 +40,10 @@
     "author_photos/Yuxiao_Kuang.jpg",
     "author_photos/Shengming_Ni.jpg"
   ],
-  "credit_note": "Second-author roles drafted at the user request: Validation, Formal analysis, Writing - review & editing; authors should ensure these match actual work."
+  "credit_note": "Second-author roles drafted at the user request: Validation, Formal analysis, Writing - review & editing; authors should ensure these match actual work.",
+  "biography_word_counts": {
+    "Yuxiao Kuang": 33,
+    "Shengming Ni": 31
+  },
+  "biography_basis": "User-provided information security undergraduate status; interpreted as currently pursuing a bachelor degree. Research interests drafted at user request."
 }
