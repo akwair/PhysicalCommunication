@@ -15,7 +15,7 @@
   "journal_specific_guide_verified": true,
   "guide_basis": "Author-supplied official Guide for Authors PDF, 19 pages, printed 2026-11-13 18:34",
   "remaining_author_items": [
-    "Biographies for Yuxiao Kuang and Shengming Ni, and photograph for Shengming Ni or journal-approved waiver",
+    "Biographies for Yuxiao Kuang and Shengming Ni",
     "editor/reviewer access to dataset repository",
     "retrieve official declaration-tool output; prepared local Word statement supplied"
   ],
@@ -37,7 +37,8 @@
   "corresponding_author": "Yuxiao Kuang",
   "second_author_email": "b25041225@njupt.edu.cn",
   "author_photo_files": [
-    "author_photos/Yuxiao_Kuang.jpg"
+    "author_photos/Yuxiao_Kuang.jpg",
+    "author_photos/Shengming_Ni.jpg"
   ],
   "credit_note": "Second-author roles drafted at the user request: Validation, Formal analysis, Writing - review & editing; authors should ensure these match actual work."
 }

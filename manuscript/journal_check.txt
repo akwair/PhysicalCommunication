@@ -26,7 +26,7 @@ VERIFIED JOURNAL REQUIREMENTS AND CURRENT FILES
   Current style is numeric, using elsarticle-num.
 - No explicit overall manuscript page/word limit found in this guide.
 - Vitae: each author <=100 words in editable format, with a passport-type
-  photograph supplied as a separate figure (p. 15). Yuxiao Kuang photograph supplied; both biographies and Shengming Ni photograph remain outstanding.
+  photograph supplied as a separate figure (p. 15). Both author photographs supplied; both biographies remain outstanding.
   Photographs are not listed as optional. No exemption has been granted.
 - Conflicts declaration tool must be completed, including when there are no
   interests, and its Word output uploaded separately; no signature required
@@ -59,7 +59,8 @@ UPLOAD MAP
 - Cover_letter.docx: Cover Letter.
 - Highlights.docx: Highlights.
 - Declaration_of_competing_interests.docx: Declaration of Interest.
-- Author biographies and photographs: provide separately when available.
+- Author photographs: author_photos/Yuxiao_Kuang.jpg and author_photos/Shengming_Ni.jpg.
+- Author biographies: provide separately when available.
 - Dataset link: also enter in the online research-data field.
 Exact interface labels and system-generated PDF remain to be checked during
 actual submission. No journal submission has been made.
@@ -74,4 +75,6 @@ Author-confirmed order: Yuxiao Kuang (corresponding author), Shengming Ni.
 Second-author email: b25041225@njupt.edu.cn.
 Second-author CRediT roles drafted on request: Validation, Formal analysis,
 Writing - review & editing. Authors should ensure the roles match actual work.
-Yuxiao Kuang photo supplied as a separate original JPEG (576 x 670 pixels).
+Yuxiao Kuang photo replaced with the author-supplied blue-background JPEG.
+Shengming Ni photo supplied as a separate original JPEG.
+Both photographs are copied unchanged from the user-provided files.
