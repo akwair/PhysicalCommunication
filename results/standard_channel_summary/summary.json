@@ -1,0 +1,2000 @@
+{
+  "groups_per_cell": 900,
+  "seeds": [
+    1520261113,
+    1520261114,
+    1520261115
+  ],
+  "total_groups": 5400,
+  "bootstrap_replicates": 2000,
+  "bootstrap": "paired group resampling within seed; pointwise intervals",
+  "results": [
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -1.0019208797463932,
+      "ber": 0.3031712962962963
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -5.332441848052371,
+      "ber": 0.26971064814814816
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -5.0686380274908585,
+      "ber": 0.27067129629629627
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -5.108763250297979,
+      "ber": 0.27023148148148146
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -6.908006158546081,
+      "ber": 0.2685532407407407
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -6.733824007876841,
+      "ber": 0.2626967592592593
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -6.778906654795701,
+      "ber": 0.2632407407407407
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -8.891143544879036,
+      "ber": 0.09280092592592593
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -10.94957625891469,
+      "ber": 0.07270833333333333
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -10.622306728263345,
+      "ber": 0.07667824074074074
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -10.630166516216095,
+      "ber": 0.07648148148148148
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -14.606102129963642,
+      "ber": 0.06336805555555555
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -14.922796381926592,
+      "ber": 0.0565625
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -15.028584815919313,
+      "ber": 0.056979166666666664
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -11.988484041054496,
+      "ber": 0.031030092592592592
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -11.98595145943367,
+      "ber": 0.030868055555555555
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -12.315951143116383,
+      "ber": 0.028506944444444446
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -12.316874340033575,
+      "ber": 0.028449074074074075
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -18.044557942184202,
+      "ber": 0.02130787037037037
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -23.792501762780365,
+      "ber": 0.008553240740740741
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -23.86652155119918,
+      "ber": 0.00863425925925926
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -1.0950536622676292,
+      "ber": 0.3010069444444444
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -4.002132738720855,
+      "ber": 0.28447916666666667
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -3.8960956360935266,
+      "ber": 0.2849305555555556
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -3.916651791599537,
+      "ber": 0.2842013888888889
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -3.598437645351459,
+      "ber": 0.29716435185185186
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -3.5304570109458364,
+      "ber": 0.2936574074074074
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -3.57424445793113,
+      "ber": 0.292962962962963
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -9.00338577083384,
+      "ber": 0.08880787037037037
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -9.815780590733475,
+      "ber": 0.08359953703703704
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -9.926921142391938,
+      "ber": 0.08163194444444444
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -9.935582079833052,
+      "ber": 0.08123842592592592
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -10.236370040988934,
+      "ber": 0.08
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -11.175844302818641,
+      "ber": 0.07159722222222223
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -11.178202542315223,
+      "ber": 0.07063657407407407
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "delay_ls",
+      "groups": 900,
+      "nmse_db": -12.204450120638127,
+      "ber": 0.030520833333333334
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "eb_residual16",
+      "groups": 900,
+      "nmse_db": -11.788638756872043,
+      "ber": 0.03350694444444444
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "eb_cp16",
+      "groups": 900,
+      "nmse_db": -12.384188370668237,
+      "ber": 0.030243055555555554
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "eb_known_noise",
+      "groups": 900,
+      "nmse_db": -12.384095089870028,
+      "ber": 0.030162037037037036
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "refined_residual16",
+      "groups": 900,
+      "nmse_db": -13.22397630940802,
+      "ber": 0.02875
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "refined_cp16",
+      "groups": 900,
+      "nmse_db": -19.341167589584302,
+      "ber": 0.010578703703703703
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "method": "refined_known_noise",
+      "groups": 900,
+      "nmse_db": -19.364170227111476,
+      "ber": 0.010636574074074074
+    }
+  ],
+  "noise": [
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "residual16",
+      "mean_ratio": 1.126164659554001,
+      "std_ratio": 0.14136501579314126,
+      "se_mean_ratio": 0.004712167193104708,
+      "expected_ratio": 1.1331629633511855
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "cp16",
+      "mean_ratio": 0.9977983387830537,
+      "std_ratio": 0.12310940492013263,
+      "se_mean_ratio": 0.004103646830671087,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "residual16",
+      "mean_ratio": 2.3463180958834524,
+      "std_ratio": 0.42009483426283384,
+      "se_mean_ratio": 0.014003161142094461,
+      "expected_ratio": 2.3316296335118554
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "cp16",
+      "mean_ratio": 1.0043643760428966,
+      "std_ratio": 0.12476968898939822,
+      "se_mean_ratio": 0.00415898963297994,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "residual16",
+      "mean_ratio": 14.365647258299997,
+      "std_ratio": 3.4789807461769584,
+      "se_mean_ratio": 0.11596602487256528,
+      "expected_ratio": 14.316296335118555
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "cp16",
+      "mean_ratio": 1.0030281946491997,
+      "std_ratio": 0.12571358246142592,
+      "se_mean_ratio": 0.004190452748714197,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "residual16",
+      "mean_ratio": 1.1038619062817552,
+      "std_ratio": 0.13673734026562007,
+      "se_mean_ratio": 0.004557911342187335,
+      "expected_ratio": 1.102880395349218
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "cp16",
+      "mean_ratio": 1.0024362062506522,
+      "std_ratio": 0.12473915947213798,
+      "se_mean_ratio": 0.004157971982404599,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "residual16",
+      "mean_ratio": 2.030996468047163,
+      "std_ratio": 0.3558558418273941,
+      "se_mean_ratio": 0.01186186139424647,
+      "expected_ratio": 2.0288039534921785
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "cp16",
+      "mean_ratio": 1.0007160003628952,
+      "std_ratio": 0.13017005669137707,
+      "se_mean_ratio": 0.004339001889712569,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "residual16",
+      "mean_ratio": 11.233655546607258,
+      "std_ratio": 2.651930628493907,
+      "se_mean_ratio": 0.08839768761646356,
+      "expected_ratio": 11.288039534921786
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "cp16",
+      "mean_ratio": 1.0013536029732442,
+      "std_ratio": 0.12423400138032957,
+      "se_mean_ratio": 0.004141133379344319,
+      "expected_ratio": 1.0
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "known_noise",
+      "mean_ratio": 1.0,
+      "std_ratio": 0.0,
+      "se_mean_ratio": 0.0,
+      "expected_ratio": 1.0
+    }
+  ],
+  "comparisons": [
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": -0.26380382056151236,
+      "ci95": [
+        -0.29507021711608455,
+        -0.2322804837858245
+      ],
+      "ber_reduction": -0.0009606481481481481,
+      "ber_ci95": [
+        -0.0018521412037037037,
+        -4.600694444444602e-05
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": 0.04012522280712179,
+      "ci95": [
+        0.018025189886340512,
+        0.06284397876004445
+      ],
+      "ber_reduction": 0.0004398148148148148,
+      "ber_ci95": [
+        -0.00020833333333333335,
+        0.0011226851851851851
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": -0.17418215066923992,
+      "ci95": [
+        -0.33145841786189173,
+        -0.02125256977614462
+      ],
+      "ber_reduction": 0.005856481481481481,
+      "ber_ci95": [
+        0.0030205439814814813,
+        0.008773148148148148
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.04508264691886011,
+      "ci95": [
+        -0.07617251232012681,
+        0.1633148904614886
+      ],
+      "ber_reduction": -0.0005439814814814816,
+      "ber_ci95": [
+        -0.0024539930555555556,
+        0.0013773148148148147
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": -0.32726953065134373,
+      "ci95": [
+        -0.3681474790952921,
+        -0.2849993950566588
+      ],
+      "ber_reduction": -0.003969907407407407,
+      "ber_ci95": [
+        -0.0053125,
+        -0.0026967592592592594
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": 0.007859787952749045,
+      "ci95": [
+        0.00014576082759415546,
+        0.016040340132947112
+      ],
+      "ber_reduction": 0.00019675925925925926,
+      "ber_ci95": [
+        -0.00016203703703703703,
+        0.0005555555555555556
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 0.31669425196294987,
+      "ci95": [
+        0.08357910639324528,
+        0.5693619904590108
+      ],
+      "ber_reduction": 0.006805555555555555,
+      "ber_ci95": [
+        0.0038191550925925923,
+        0.010243923611111106
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.10578843399272225,
+      "ci95": [
+        0.02123791199083139,
+        0.19344311614129603
+      ],
+      "ber_reduction": -0.0004166666666666667,
+      "ber_ci95": [
+        -0.0011689814814814816,
+        0.00020833333333333335
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.32999968368271393,
+      "ci95": [
+        0.2876452790616321,
+        0.3741373770797077
+      ],
+      "ber_reduction": 0.002361111111111111,
+      "ber_ci95": [
+        0.0008793402777777778,
+        0.004085937499999998
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": 0.000923196917190565,
+      "ci95": [
+        -0.0011776167921022712,
+        0.0029508612030108394
+      ],
+      "ber_reduction": 5.787037037037037e-05,
+      "ber_ci95": [
+        -0.00010416666666666667,
+        0.0002314814814814815
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 5.747943820596162,
+      "ci95": [
+        5.403353576998816,
+        6.072423302956983
+      ],
+      "ber_reduction": 0.01275462962962963,
+      "ber_ci95": [
+        0.008574652777777778,
+        0.01750028935185185
+      ]
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.0740197884188149,
+      "ci95": [
+        0.009728637643700778,
+        0.14537667518990832
+      ],
+      "ber_reduction": -8.101851851851852e-05,
+      "ber_ci95": [
+        -0.00032407407407407406,
+        0.00012731481481481483
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": -0.10603710262732725,
+      "ci95": [
+        -0.1261007022546453,
+        -0.08641795807639743
+      ],
+      "ber_reduction": -0.0004513888888888889,
+      "ber_ci95": [
+        -0.0012962962962962963,
+        0.0004401041666666651
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": 0.020556155506010185,
+      "ci95": [
+        0.0064036595585729526,
+        0.03406267710802111
+      ],
+      "ber_reduction": 0.0007291666666666667,
+      "ber_ci95": [
+        -4.6296296296296294e-05,
+        0.0014699074074074074
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": -0.06798063440562307,
+      "ci95": [
+        -0.15258991556726187,
+        0.019527165811101876
+      ],
+      "ber_reduction": 0.0035069444444444445,
+      "ber_ci95": [
+        0.0010642361111111113,
+        0.006111111111111111
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.04378744698529402,
+      "ci95": [
+        -0.025439485117440076,
+        0.11253393907212893
+      ],
+      "ber_reduction": 0.0006944444444444445,
+      "ber_ci95": [
+        -0.0011574074074074073,
+        0.002615740740740741
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.11114055165846495,
+      "ci95": [
+        0.0804038911613732,
+        0.14523853358004365
+      ],
+      "ber_reduction": 0.0019675925925925924,
+      "ber_ci95": [
+        0.0009722222222222223,
+        0.0029976851851851853
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": 0.008660937441115102,
+      "ci95": [
+        0.003510599730451452,
+        0.014032057251216477
+      ],
+      "ber_reduction": 0.0003935185185185185,
+      "ber_ci95": [
+        3.4432870370370386e-05,
+        0.0007523148148148147
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 0.9394742618297064,
+      "ci95": [
+        0.8248896178436704,
+        1.0560642934715563
+      ],
+      "ber_reduction": 0.008402777777777778,
+      "ber_ci95": [
+        0.006377314814814815,
+        0.010462962962962964
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.002358239496583228,
+      "ci95": [
+        -0.04104709453044283,
+        0.04500994990567758
+      ],
+      "ber_reduction": 0.0009606481481481481,
+      "ber_ci95": [
+        0.00019646990740740744,
+        0.0017476851851851852
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "candidate": "eb_cp16",
+      "reference": "eb_residual16",
+      "gain_db": 0.5955496137961938,
+      "ci95": [
+        0.5299176958662263,
+        0.6603804972431639
+      ],
+      "ber_reduction": 0.003263888888888889,
+      "ber_ci95": [
+        0.0021527777777777778,
+        0.004386574074074074
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "candidate": "eb_known_noise",
+      "reference": "eb_cp16",
+      "gain_db": -9.32807982079868e-05,
+      "ci95": [
+        -0.001545555175010744,
+        0.00127442858780532
+      ],
+      "ber_reduction": 8.101851851851852e-05,
+      "ber_ci95": [
+        -5.787037037037037e-05,
+        0.0002314814814814815
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "candidate": "refined_cp16",
+      "reference": "refined_residual16",
+      "gain_db": 6.117191280176282,
+      "ci95": [
+        5.911575307123862,
+        6.313196123858239
+      ],
+      "ber_reduction": 0.018171296296296297,
+      "ber_ci95": [
+        0.01582175925925926,
+        0.02039380787037037
+      ]
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "candidate": "refined_known_noise",
+      "reference": "refined_cp16",
+      "gain_db": 0.02300263752717373,
+      "ci95": [
+        0.0054664759838961565,
+        0.04236869718566933
+      ],
+      "ber_reduction": -5.787037037037037e-05,
+      "ber_ci95": [
+        -0.00016203703703703703,
+        4.6296296296296294e-05
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 1,
+      "any_candidate_failure": 14,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 0.8666666666666667
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 2,
+      "any_candidate_failure": 18,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 0.9611111111111111
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 0,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 2,
+      "any_candidate_failure": 16,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 0.94
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 0,
+      "any_candidate_failure": 3,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.1288888888888888
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 3,
+      "any_candidate_failure": 41,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.5933333333333333
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 10,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 3,
+      "any_candidate_failure": 39,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.5666666666666667
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 0,
+      "any_candidate_failure": 1,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.258888888888889
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 18,
+      "any_candidate_failure": 136,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 2.3844444444444446
+    },
+    {
+      "profile": "EPA",
+      "snr_db": 20,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 21,
+      "any_candidate_failure": 134,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 2.3744444444444444
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 1,
+      "any_candidate_failure": 14,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.2744444444444445
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 1,
+      "any_candidate_failure": 25,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.4366666666666668
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 0,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 1,
+      "any_candidate_failure": 17,
+      "selected_at_order_cap": 0,
+      "mean_selected_order": 1.4088888888888889
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 7,
+      "any_candidate_failure": 51,
+      "selected_at_order_cap": 1,
+      "mean_selected_order": 2.4722222222222223
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 28,
+      "any_candidate_failure": 138,
+      "selected_at_order_cap": 29,
+      "mean_selected_order": 3.581111111111111
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 10,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 30,
+      "any_candidate_failure": 142,
+      "selected_at_order_cap": 26,
+      "mean_selected_order": 3.54
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "residual16",
+      "calls": 900,
+      "selected_failure": 18,
+      "any_candidate_failure": 49,
+      "selected_at_order_cap": 4,
+      "mean_selected_order": 2.922222222222222
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "cp16",
+      "calls": 900,
+      "selected_failure": 178,
+      "any_candidate_failure": 245,
+      "selected_at_order_cap": 608,
+      "mean_selected_order": 5.62
+    },
+    {
+      "profile": "EVA",
+      "snr_db": 20,
+      "source": "known_noise",
+      "calls": 900,
+      "selected_failure": 179,
+      "any_candidate_failure": 246,
+      "selected_at_order_cap": 615,
+      "mean_selected_order": 5.627777777777778
+    }
+  ],
+  "waveform_audit": {
+    "EPA": {
+      "max_cp_signal_difference": 0.0,
+      "max_frequency_response_error": 6.087272963323595e-16
+    },
+    "EVA": {
+      "max_cp_signal_difference": 0.0,
+      "max_frequency_response_error": 1.4043333874306805e-15
+    }
+  },
+  "per_seed_results": [
+    {
+      "seed": 1520261113,
+      "results": [
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -0.9735695978247065,
+          "ber": 0.30395833333333333
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -5.2427595985450335,
+          "ber": 0.2751736111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -5.013148799125596,
+          "ber": 0.27545138888888887
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -5.05332283777733,
+          "ber": 0.2746875
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -6.86049026780845,
+          "ber": 0.27336805555555554
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -6.776391472758792,
+          "ber": 0.26677083333333335
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -6.799543352612229,
+          "ber": 0.2682291666666667
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -8.985195979858567,
+          "ber": 0.08850694444444444
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -11.013148864443721,
+          "ber": 0.06927083333333334
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -10.703856540684454,
+          "ber": 0.07350694444444444
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -10.713021398269296,
+          "ber": 0.07302083333333333
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -14.887628446045065,
+          "ber": 0.059270833333333335
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -15.274954831845315,
+          "ber": 0.05232638888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -15.331828916330217,
+          "ber": 0.05291666666666667
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -11.924239148855364,
+          "ber": 0.03333333333333333
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -11.883500048675232,
+          "ber": 0.034270833333333334
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.254951633450542,
+          "ber": 0.0303125
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.254759050622706,
+          "ber": 0.030416666666666668
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -17.77850738714568,
+          "ber": 0.029375
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -23.66037650769677,
+          "ber": 0.0084375
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -23.729298362948494,
+          "ber": 0.0084375
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -1.1677097651840038,
+          "ber": 0.3014236111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -4.018012268037963,
+          "ber": 0.285625
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -3.8774402235233483,
+          "ber": 0.28607638888888887
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -3.9234292757793057,
+          "ber": 0.28402777777777777
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -3.761232316405816,
+          "ber": 0.2950347222222222
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -3.4967297930158328,
+          "ber": 0.2940277777777778
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -3.634685207109374,
+          "ber": 0.2901736111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -8.935482955441396,
+          "ber": 0.09083333333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -9.71700115660753,
+          "ber": 0.08486111111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -9.822014039245326,
+          "ber": 0.08197916666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -9.83176242504742,
+          "ber": 0.0817361111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -10.218677066433157,
+          "ber": 0.08364583333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -11.06770122188111,
+          "ber": 0.07572916666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -11.079318759079293,
+          "ber": 0.07472222222222222
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -11.942950143852196,
+          "ber": 0.030381944444444444
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -11.604306608706311,
+          "ber": 0.03340277777777778
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.111932913004056,
+          "ber": 0.030347222222222223
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.110822511890849,
+          "ber": 0.030208333333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -13.16362718709756,
+          "ber": 0.02746527777777778
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -19.27553553770444,
+          "ber": 0.010486111111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -19.289711305498965,
+          "ber": 0.010590277777777778
+        }
+      ]
+    },
+    {
+      "seed": 1520261114,
+      "results": [
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -1.0004541520520256,
+          "ber": 0.3020138888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -5.484630793415349,
+          "ber": 0.2655902777777778
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -5.209325605608034,
+          "ber": 0.2669097222222222
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -5.24508249222324,
+          "ber": 0.2663888888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -6.878804251090934,
+          "ber": 0.26579861111111114
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -6.765225770911777,
+          "ber": 0.2590277777777778
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -6.866615779761416,
+          "ber": 0.2592361111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -8.78736583509297,
+          "ber": 0.09628472222222222
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -10.88414885084769,
+          "ber": 0.07503472222222222
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -10.531108591384214,
+          "ber": 0.07927083333333333
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -10.537918141391549,
+          "ber": 0.07909722222222222
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -14.456528619695659,
+          "ber": 0.06736111111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -14.598380226392596,
+          "ber": 0.0596875
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -14.800748725832037,
+          "ber": 0.059930555555555556
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -12.024279244293371,
+          "ber": 0.03260416666666666
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -12.018909944187278,
+          "ber": 0.03225694444444444
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.344231981187137,
+          "ber": 0.03027777777777778
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.347165814900487,
+          "ber": 0.03013888888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -18.15895680863208,
+          "ber": 0.0225
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -24.059620965039578,
+          "ber": 0.01017361111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -24.143717612021454,
+          "ber": 0.01017361111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -0.9428384786901167,
+          "ber": 0.3029513888888889
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -3.842159953906999,
+          "ber": 0.2895138888888889
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -3.7678744621255635,
+          "ber": 0.28961805555555553
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -3.7743000648060465,
+          "ber": 0.2896875
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -3.4349701017716043,
+          "ber": 0.30336805555555557
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -3.435154868891832,
+          "ber": 0.2992361111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -3.4615268091450657,
+          "ber": 0.3011111111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -9.257512331633942,
+          "ber": 0.08541666666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -10.076590820773788,
+          "ber": 0.07954861111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -10.218245380738402,
+          "ber": 0.07722222222222222
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -10.221422809850873,
+          "ber": 0.07697916666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -10.48445650530734,
+          "ber": 0.0740625
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -11.390706422852341,
+          "ber": 0.06694444444444445
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -11.386169122490573,
+          "ber": 0.06614583333333333
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -12.54530496393322,
+          "ber": 0.03079861111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -11.999066367428497,
+          "ber": 0.035555555555555556
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.73200553317203,
+          "ber": 0.030520833333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.732201595074674,
+          "ber": 0.030520833333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -13.25603788847895,
+          "ber": 0.030694444444444444
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -19.19622088125238,
+          "ber": 0.012152777777777778
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -19.220846103938623,
+          "ber": 0.012256944444444445
+        }
+      ]
+    },
+    {
+      "seed": 1520261115,
+      "results": [
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -1.0317224383461052,
+          "ber": 0.30354166666666665
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -5.283160724880906,
+          "ber": 0.26836805555555554
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -4.995463763416255,
+          "ber": 0.2696527777777778
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -5.039431664285397,
+          "ber": 0.26961805555555557
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -6.983633903223884,
+          "ber": 0.2664930555555556
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -6.662968643674024,
+          "ber": 0.26229166666666665
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -6.678403720481371,
+          "ber": 0.2622569444444444
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -8.898197000267254,
+          "ber": 0.09361111111111112
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -10.949124722874764,
+          "ber": 0.07381944444444444
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -10.629382362790192,
+          "ber": 0.07725694444444445
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -10.636971766962178,
+          "ber": 0.07732638888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -14.475682642958512,
+          "ber": 0.06347222222222222
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -14.90418338335342,
+          "ber": 0.05767361111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -14.956210550398357,
+          "ber": 0.058090277777777775
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -12.0147364198215,
+          "ber": 0.02715277777777778
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -12.05290476991056,
+          "ber": 0.02607638888888889
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.34660489155382,
+          "ber": 0.024930555555555556
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.346591238248072,
+          "ber": 0.024791666666666667
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -18.196754343831895,
+          "ber": 0.01204861111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -23.661648563228013,
+          "ber": 0.007048611111111111
+        },
+        {
+          "profile": "EPA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -23.731294468933758,
+          "ber": 0.007291666666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "delay_ls",
+          "nmse_db": -1.169292463441989,
+          "ber": 0.29864583333333333
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_residual16",
+          "nmse_db": -4.142496627859208,
+          "ber": 0.2782986111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_cp16",
+          "nmse_db": -4.040515520937696,
+          "ber": 0.2790972222222222
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "eb_known_noise",
+          "nmse_db": -4.048689111381166,
+          "ber": 0.2788888888888889
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_residual16",
+          "nmse_db": -3.5942603823579944,
+          "ber": 0.2930902777777778
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_cp16",
+          "nmse_db": -3.6577460518933695,
+          "ber": 0.28770833333333334
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 0,
+          "method": "refined_known_noise",
+          "nmse_db": -3.6217662531831167,
+          "ber": 0.28760416666666666
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "delay_ls",
+          "nmse_db": -8.812190355137828,
+          "ber": 0.09017361111111111
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_residual16",
+          "nmse_db": -9.649096779131298,
+          "ber": 0.08638888888888889
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_cp16",
+          "nmse_db": -9.736832016144337,
+          "ber": 0.08569444444444445
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "eb_known_noise",
+          "nmse_db": -9.749687612236361,
+          "ber": 0.085
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_residual16",
+          "nmse_db": -10.001436003575858,
+          "ber": 0.08229166666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_cp16",
+          "nmse_db": -11.064053023936797,
+          "ber": 0.07211805555555556
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 10,
+          "method": "refined_known_noise",
+          "nmse_db": -11.063812494776704,
+          "ber": 0.07104166666666667
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "delay_ls",
+          "nmse_db": -12.162735927943125,
+          "ber": 0.030381944444444444
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_residual16",
+          "nmse_db": -11.782355739667631,
+          "ber": 0.0315625
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_cp16",
+          "nmse_db": -12.347930353729378,
+          "ber": 0.029861111111111113
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "eb_known_noise",
+          "nmse_db": -12.348684457783456,
+          "ber": 0.029756944444444444
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_residual16",
+          "nmse_db": -13.255515173739813,
+          "ber": 0.028090277777777777
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_cp16",
+          "nmse_db": -19.558098536675658,
+          "ber": 0.009097222222222222
+        },
+        {
+          "profile": "EVA",
+          "snr_db": 20,
+          "method": "refined_known_noise",
+          "nmse_db": -19.589094979788207,
+          "ber": 0.0090625
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "standard_channel_study.py": "def1cb83192993812b14cb35d4dd1647a9ba51176947923a25d1cc114dacdb93",
+    "standard_channel_protocol.txt": "46d9c51dc7130c34ae9f3dfe843eeaeb454716a667e29f57575c9e4641f9a339",
+    "cp_confirmation.py": "e730d2507fb3f5ecbf699a7c4b56f41d89e6b602cbe59e8e11e9e467334e704e",
+    "offgrid_baseline.py": "0d1a1f5d8bf09942c0d9537d1868d1b2f576cc2dd1bb531ba01ff858183bbe3d",
+    "stage3_study.py": "fb9eb2c2a9e3c3567f7df7baacb3f243cc12a6e2863776a49c88a81bc91bc50e",
+    "waveform_model.py": "4be97b09aeae43b74bc30c7e1168aeef73c2ade436fdb4857addaafc5e04bce5",
+    "pilot_ofdm.py": "9f4eee90a8e45940f19cb6306310878122244d08fd3f2c37cd601f19d8a19bff",
+    "noise_study.py": "faa294dcd979d5b21367533c3d1c3815acf61596c0e502d22f2fa7b2ead9ff60"
+  }
+}

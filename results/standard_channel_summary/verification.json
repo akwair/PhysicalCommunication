@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "groups": 5400,
+  "regenerated_noise_arrays_exact": true,
+  "regenerated_delay_ls_and_eb_metrics_match": true,
+  "saved_flagged_inputs_match_regenerated_observations": true,
+  "budget_unflagged_metrics_unchanged": true,
+  "replayed_calls": 1329,
+  "aggregate_metrics_match_per_group_arrays": true,
+  "maximum_noise_mean_error_in_standard_errors": 1.4851560885668837,
+  "evidence_sha256": {
+    "results\\standard_channel1\\results.json": "de800886b247ff1c33e459bed662c94dfed71433d184cce71673e1ddf924ab5d",
+    "results\\standard_channel1\\frame_metrics.npz": "24018e59c7edcebc8ea2e265825b3ec615208babe9e1585a02227276a7a04ec8",
+    "results\\standard_channel1\\capped_inputs.npz": "2fe716854ceee5e402dee3f4c90beaa2e44469bec42e687d47a497ed3816e32f",
+    "results\\standard_channel2\\results.json": "7c3752101ddac5e1be88e247f6bd7f17d1b2f4921dba131ebfa057390e2912e6",
+    "results\\standard_channel2\\frame_metrics.npz": "17d1e52c508a314cc32992afc3526de369ca88f13576bab033578434d68cfcad",
+    "results\\standard_channel2\\capped_inputs.npz": "a7897cc17d618ea819b8434766c899b31b9c872b71cf7e0ab54030e003311e35",
+    "results\\standard_channel3\\results.json": "7a04451880ca697ce49e18186e2c6e0261ae79f7584295a8870bc8239be2a756",
+    "results\\standard_channel3\\frame_metrics.npz": "272a7729202368e08ac6fdcf0adeb56c1d72257b584b98ba0cc7aad39eaf80bb",
+    "results\\standard_channel3\\capped_inputs.npz": "10c0b1a2c9597ef89deb83f75f24bc1540681967871b116e25353ab240af2389"
+  }
+}

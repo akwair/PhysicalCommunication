@@ -1,0 +1,15 @@
+Post-run optimization-budget audit, 2026-11-13.
+
+The frozen EPA/EVA run completed before this audit was specified. Some fits
+had nonconverged candidate optimizations at the inherited 60-evaluation cap,
+particularly EVA at 20 dB. This follow-up tests numerical-budget sensitivity;
+it is not a newly selected performance campaign.
+
+Replay EVERY source/profile/SNR/group call with any nonconverged candidate,
+not only the selected candidate and not only a favorable condition. Use the
+saved target pilot, true response, bits, received symbols, and the same noise
+estimate. Increase only max_nfev from 60 to 300. Keep all other settings and
+random observations fixed. Leave previously converged calls unchanged.
+Report all-cell aggregate NMSE and BER, CP-over-residual NMSE gains, changes
+from the frozen baseline and remaining nonconvergence counts. Preserve the
+60-evaluation results as primary, and label the replay as sensitivity analysis.

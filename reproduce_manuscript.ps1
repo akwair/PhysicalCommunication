@@ -1,4 +1,5 @@
-param([ValidateSet('Verify','Figures','Experiments')][string]$Mode='Verify')
+param([ValidateSet('Verify','Figures','Experiments','StandardChannels')][string]$Mode='Verify',
+      [string]$StandardOutputRoot='results/standard_channel_reproduction')
 $ErrorActionPreference='Stop'
 Set-Location -LiteralPath $PSScriptRoot
 $env:OPENBLAS_NUM_THREADS='1'
@@ -11,8 +12,29 @@ function Run-Python {
     if ($LASTEXITCODE -ne 0) { throw "Python failed: $Arguments" }
 }
 if ($Mode -eq 'Verify') {
-    Run-Python -m pytest test_noise_study.py test_stage3_study.py test_offgrid_baseline.py test_waveform_model.py test_cp_confirmation.py test_valse_python.py test_operating_region_study.py test_valse_budget_sensitivity.py -q
+    Run-Python -m pytest test_noise_study.py test_stage3_study.py test_offgrid_baseline.py test_waveform_model.py test_cp_confirmation.py test_valse_python.py test_operating_region_study.py test_valse_budget_sensitivity.py test_standard_channel_study.py -q
     exit 0
+}
+if ($Mode -eq 'StandardChannels') {
+    $standardInputs=@()
+    for ($i=0; $i -lt 3; $i++) {
+        $rep=$i+1
+        $standardPath=Join-Path $StandardOutputRoot "seed$rep"
+        Run-Python standard_channel_study.py --frames 300 --seed (1520261113+$i) --out $standardPath
+        $standardInputs+=$standardPath
+    }
+    Run-Python analyze_standard_channels.py --inputs @standardInputs --out (Join-Path $StandardOutputRoot 'summary')
+    exit 0
+}
+if ($Mode -eq 'Experiments') {
+    for ($i=0; $i -lt 3; $i++) {
+        $rep=$i+1
+        Run-Python standard_channel_study.py --frames 300 --seed (1520261113+$i) --out "results/standard_channel$rep"
+    }
+    Run-Python analyze_standard_channels.py
+    Run-Python build_standard_channel_table.py
+    Run-Python standard_channel_budget_audit.py
+    Run-Python verify_standard_channel_results.py
 }
 if ($Mode -eq 'Experiments') {
     for ($i=0; $i -lt 3; $i++) {
@@ -32,3 +54,5 @@ Run-Python valse_pilot_check.py aggregate results/valse_check1 results/valse_che
 Run-Python make_manuscript_figures.py
 Run-Python build_manuscript_assets.py
 Run-Python make_operating_region_figure.py
+Run-Python analyze_standard_channels.py
+Run-Python build_standard_channel_table.py

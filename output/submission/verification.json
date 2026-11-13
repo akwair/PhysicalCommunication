@@ -1,16 +1,17 @@
 {
   "checked_date": "2026-11-13",
-  "tests_passed": 58,
+  "tests_passed": 63,
   "test_exit_code": 0,
-  "test_seconds": 6.67,
+  "test_seconds": 8.64,
   "post_exit_console_warning": "pyreadline3 Console destructor warning; pytest exit 0",
   "highlights_characters": [
     81,
     77,
     74,
-    80
+    80,
+    79
   ],
-  "abstract_whitespace_tokens": 200,
+  "abstract_whitespace_tokens": 221,
   "keywords": 5,
   "journal_specific_guide_verified": true,
   "guide_basis": "Author-supplied official Guide for Authors PDF, 19 pages, printed 2026-11-13 18:34",
@@ -20,8 +21,8 @@
   ],
   "repository_anonymous_http_status": 404,
   "competing_interests_document": "Locally prepared; official tool download timed out",
-  "pdf_pages": 18,
-  "source_archive_files": 15,
+  "pdf_pages": 20,
+  "source_archive_files": 18,
   "docx_files": [
     "Cover_letter.docx",
     "Highlights.docx",
@@ -45,5 +46,44 @@
     "Yuxiao Kuang": 33,
     "Shengming Ni": 31
   },
-  "biography_basis": "User-provided information security undergraduate status; interpreted as currently pursuing a bachelor degree. Research interests drafted at user request."
+  "biography_basis": "User-provided information security undergraduate status; interpreted as currently pursuing a bachelor degree. Research interests drafted at user request.",
+  "standard_channel_validation": {
+    "profiles": [
+      "EPA",
+      "EVA"
+    ],
+    "scope": "standard 3GPP power-delay profiles in block-static OFDM; no standardized Doppler or LTE conformance claim",
+    "snr_db": [
+      0,
+      10,
+      20
+    ],
+    "seeds": [
+      1520261113,
+      1520261114,
+      1520261115
+    ],
+    "groups_per_cell": 900,
+    "total_groups": 5400,
+    "gain_20db_epa": 5.747943820596162,
+    "gain_20db_eva": 6.117191280176282,
+    "optimizer_replayed_calls": 1329,
+    "maximum_gain_change_db": 0.0014239850933351894,
+    "regeneration_verification": "results/standard_channel_summary/verification.json",
+    "source_hashes_verified": true,
+    "low_snr_results_retained": true
+  },
+  "ai_declaration_scope": "Implementation/debugging of simulation code, analysis of simulation outputs, drafting/revision of text",
+  "submission_sha256": {
+    "PhysicalCommunication.pdf": "84b95f2a1e2e9e42f4470be787eace94d6159a96d6b06a255a5b46e05ea71857",
+    "PhysicalCommunication_LaTeX.zip": "d54f50faa55fea6876d2d2912ee7f674892f3f094e07d897833c0a310f1b6bec",
+    "Cover_letter.docx": "11d891e62b1ba74ce2d1f576f9c698c0d2d3f67ec452abe2be7230c125538c9f",
+    "Highlights.docx": "a53635600ab735fe61817eb3c4caae6ff8ca2f80823f324c26486c6257118ebf"
+  },
+  "flat_source_archive_build_verified": true,
+  "flat_source_archive_page_text_matches_main_pdf": true,
+  "rendered_submission_documents": {
+    "Cover_letter.docx": 1,
+    "Highlights.docx": 1
+  }
 }

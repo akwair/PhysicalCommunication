@@ -1,0 +1,45 @@
+\begin{table}[t]
+\centering
+\caption{Standard EPA/EVA power-delay profiles: noise calibration and continuous-delay receiver NMSE (dB), with 900 paired groups per condition. R and CP use 16-block residual and CP calibration; K uses known noise. Noise ratios are empirical means divided by the thermal variance. All receiver settings are fixed.}
+\label{tab:standard_nmse}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrrrr}
+\toprule
+PDP & SNR & \multicolumn{2}{c}{Noise ratio} & \multicolumn{3}{c}{NMSE (dB)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-7}
+ & (dB) & R & CP & R & CP & K \\
+\midrule
+EPA & 0 & 1.126 & 0.998 & -6.91 & -6.73 & -6.78 \\
+EPA & 10 & 2.346 & 1.004 & -14.61 & -14.92 & -15.03 \\
+EPA & 20 & 14.366 & 1.003 & -18.04 & -23.79 & -23.87 \\
+\midrule
+EVA & 0 & 1.104 & 1.002 & -3.60 & -3.53 & -3.57 \\
+EVA & 10 & 2.031 & 1.001 & -10.24 & -11.18 & -11.18 \\
+EVA & 20 & 11.234 & 1.001 & -13.22 & -19.34 & -19.36 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Paired NMSE gains from CP calibration and uncoded BER for the same standard-profile experiment. Positive gain favors CP; brackets give pointwise 95\% paired bootstrap intervals, stratified by seed. BER columns use the continuous-delay receiver with residual (R), CP, and known-noise (K) calibration.}
+\label{tab:standard_gain}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrrr}
+\toprule
+PDP & SNR & NMSE gain (dB) & \multicolumn{3}{c}{BER} \\
+\cmidrule(lr){4-6}
+ & (dB) & CP over R [95\% CI] & R & CP & K \\
+\midrule
+EPA & 0 & -0.17 [-0.33, -0.02] & 0.2686 & 0.2627 & 0.2632 \\
+EPA & 10 & 0.32 [0.08, 0.57] & 0.0634 & 0.0566 & 0.0570 \\
+EPA & 20 & 5.75 [5.40, 6.07] & 0.0213 & 0.0086 & 0.0086 \\
+\midrule
+EVA & 0 & -0.07 [-0.15, 0.02] & 0.2972 & 0.2937 & 0.2930 \\
+EVA & 10 & 0.94 [0.82, 1.06] & 0.0800 & 0.0716 & 0.0706 \\
+EVA & 20 & 6.12 [5.91, 6.31] & 0.0288 & 0.0106 & 0.0106 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,11 @@
+{
+  "publisher": "ETSI / 3GPP",
+  "document": "ETSI TS 136 101 V8.10.0 (2010-07), 3GPP TS 36.101 Release 8",
+  "title": "Evolved Universal Terrestrial Radio Access (E-UTRA); User Equipment (UE) radio transmission and reception",
+  "url": "https://etsi.org/deliver/etsi_ts/136100_136199/136101/08.10.00_60/ts_136101v081000p.pdf",
+  "location": "Annex B.2.1, Tables B.2.1-2 and B.2.1-3, printed page 138",
+  "verified_date": "2026-11-13",
+  "verification": "Numeric delay and relative-power columns checked against the official PDF text retrieved by web tool. Direct local PDF download returned HTTP 403; publisher PDF is not redistributed.",
+  "used_parameters": "All EPA and EVA excess delays in ns and relative powers in dB; converted to unit-sum linear powers",
+  "scope": "Only standard power-delay profiles, embedded in the paper's independently fading block-static OFDM model; not standardized Doppler processes or LTE conformance"
+}

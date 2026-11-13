@@ -2,3 +2,9 @@
 * -text
 # Matplotlib's generated SVG paths contain intentional trailing spaces.
 *.svg -whitespace
+*.pdf binary
+*.docx binary
+*.zip binary
+*.jpg binary
+*.png binary
+*.npz binary

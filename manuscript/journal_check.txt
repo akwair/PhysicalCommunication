@@ -14,10 +14,10 @@ VERIFIED JOURNAL REQUIREMENTS AND CURRENT FILES
   cover letter: 9 Wenyuan Road, Nanjing 210023, China.
   University address source:
   https://www.njupt.edu.cn/2017/0904/c20a111908/page.psp
-- Abstract maximum 250 words (p. 10): current abstract ~200 tokens/words.
+- Abstract maximum 250 words (p. 10): current abstract 221 whitespace tokens (below 250 words).
 - Keywords 1-7 (p. 10): current manuscript has 5.
 - Highlights encouraged, not mandatory; 3-5 bullets, <=85 characters each
-  (p. 10): 4 bullets with lengths 81, 77, 74, 80. Editable DOCX supplied.
+  (p. 10): 5 bullets with lengths 81, 77, 74, 80, 79. Editable DOCX supplied.
 - Graphical abstract encouraged, not mandatory (p. 11): not supplied.
 - Figures supplied separately; vector PDF accepted with embedded fonts
   (pp. 11-12). Four vector PDF figures are in the source archive.
@@ -36,9 +36,9 @@ VERIFIED JOURNAL REQUIREMENTS AND CURRENT FILES
   supplied for review. It is NOT a successful official-tool export; retrieve
   the official output before journal submission if required by the interface.
 - AI statement identifies the tool, purpose and author responsibility
-  (pp. 5-6). Current wording was retained during this packaging update.
-  Historical project records describe broader assistance than the present
-  debugging statement; this audit does not independently reconcile that.
+  (pp. 5-6). Wording now describes implementation and debugging of simulation
+  code, analysis of simulation outputs, and drafting/revision of text; it was
+  updated to reflect the actual scope of this experiment addition.
 
 DATA REQUIREMENTS
 Option C applies (pp. 13-14): deposit data in a relevant repository and give
@@ -83,3 +83,11 @@ AUTHOR BIOGRAPHIES
 Both authors are described as pursuing a bachelor's degree in information security
 at Nanjing University of Posts and Telecommunications. Research interests drafted
 at the user's request to reflect the manuscript topic and degree subject.
+
+STANDARD POWER-DELAY-PROFILE VALIDATION
+EPA/EVA x 0/10/20 dB; 3 seeds x 300 groups = 900 per cell, 5400 overall.
+Main PDF: 20 pages. Added design, results, two tables and official ETSI reference.
+All 63 numerical tests passed; raw observations regenerated and source hashes
+checked. All six cells and finite-budget diagnostics are retained.
+Higher-budget replay: 1329 flagged fits; maximum gain change <0.0015 dB.
+Word cover letter and five-bullet Highlights updated and visually checked.

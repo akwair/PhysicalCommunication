@@ -1,0 +1,47 @@
+EPA/EVA power-delay-profile validation protocol
+Frozen before production runs, 2026-11-13.
+
+Question: Does the residual-leakage / calibration-source relationship persist
+under externally specified power-delay profiles, with receiver settings fixed?
+
+Source: ETSI TS 136 101 V8.10.0 (2010-07), 3GPP TS 36.101 Release 8,
+Annex B.2.1, Tables B.2.1-2 (EPA) and B.2.1-3 (EVA), printed page 138.
+https://etsi.org/deliver/etsi_ts/136100_136199/136101/08.10.00_60/ts_136101v081000p.pdf
+Use all seven EPA / nine EVA delays and relative powers without truncation.
+Convert dB powers to linear and normalize total mean channel power to one.
+
+Physical embedding: sampling interval 250 ns (4 MHz), N=64, 62.5 kHz spacing,
+16-sample CP (4 us), 16 comb pilots, 48 QPSK data subcarriers. Physical delays
+are not rescaled. EPA maximum 410 ns = 1.64 samples; EVA maximum 2510 ns =
+10.04 samples. Both satisfy the existing receiver bound of 12 samples and
+the four clean CP-pair condition. A 25-fold oversampled finite-burst audit
+places every standard delay exactly on the 10 ns grid.
+These are standard power-delay profiles embedded in the paper's block-static
+OFDM model, not a full LTE conformance or standardized Doppler simulation.
+Gains are independent proper complex Gaussian between T=16 calibration blocks
+and between groups; delays and powers stay fixed. Use existing generate_cp,
+including shared FFT/CP-tail noise. No external training dataset is involved.
+
+Cells: EPA, EVA x SNR 0, 10, 20 dB. Three production seeds 1520261113,
+1520261114, 1520261115; 300 independent groups per seed/cell, 900 pooled.
+Smoke tests use other seeds and are excluded from production summaries.
+No cell, seed or capped optimizer call is discarded based on its result.
+
+Methods: integer EB and continuous-delay OMP/variable projection, each using
+residual16, cp16 or known noise; additionally delay LS as a fixed baseline.
+Keep L=12, max_delay=12, grid_step=.25, max_paths=6, and optimizer budget 60
+as in the existing receiver. The six-path fitting cap is a receiver setting,
+not the number of physical EPA/EVA taps. True delays, powers and path count
+are never passed to these estimators. Known-noise is an information reference.
+Compare on identical target observations within each group.
+
+Outputs: all-cell normalized noise mean/std, analytic residual mean, NMSE
+(ratio of total error to total truth energy), uncoded BER (96 bits/group),
+paired CP-minus-residual improvements, and known-noise reference gaps.
+2000 paired group-bootstrap replicates, resampled within each of the three
+seeds, seed 1620261113. Report pointwise 95% percentile intervals without
+multiplicity correction. Positive gain = lower error under the candidate.
+Retain per-group metrics, noise estimates, selected orders, optimization
+diagnostics, independent-seed summaries and hashes of the executed sources.
+Audit physical CP cancellation and frequency-response agreement separately.
+Write a compact all-six-cell table; interpretation must follow observed data.

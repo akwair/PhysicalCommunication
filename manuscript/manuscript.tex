@@ -36,7 +36,9 @@ replaces residual calibration in the same continuous-delay receiver. At
 4.25~dB for separated and closely spaced paths, respectively; paired 95\%
 bootstrap intervals are [2.57, 3.34] and [3.97, 4.52]~dB. A finite-burst
 waveform check verifies fractional-delay cancellation, and the experiment
-preserves the dependence between cyclic-prefix and FFT noise. Together,
+preserves the dependence between cyclic-prefix and FFT noise. Additional
+validation with standard EPA and EVA power-delay profiles gives 5.75 and
+6.12~dB gains at 20~dB with the same receiver settings. Together,
 the analysis and controlled intervention distinguish calibration gaps that
 benefit from further averaging from those that call for a different noise
 source or channel representation.
@@ -64,7 +66,9 @@ noise source. With target pilots and the continuous-delay receiver held
 fixed, the established CP statistic improves NMSE by 2.98 and 4.25~dB at
 20~dB for the two fractional profiles and recovers most of their known-noise
 performance. Integer EB retains a larger representation error on the same
-observations. These results provide a model-conditioned basis for choosing
+observations. Standard EPA and EVA power-delay profiles independently yield
+5.75 and 6.12~dB gains at 20~dB with the receiver settings held fixed.
+These results provide a model-conditioned basis for choosing
 between additional averaging, signal-cancelling calibration, and a more
 suitable channel representation.
 
@@ -92,7 +96,8 @@ commercial, or not-for-profit sectors.
 The authors declare no competing interests.
 
 \section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
-OpenAI Codex was used for debugging assistance.
+OpenAI Codex assisted with the implementation and debugging of simulation
+code, analysis of simulation outputs, and drafting and revision of text.
 The authors reviewed and verified the scientific content, code, results,
 references, and final text and take full responsibility for the content of
 the published article.

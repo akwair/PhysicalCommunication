@@ -32,7 +32,7 @@ MKL_NUM_THREADS=1 before starting Python. VALSE also sets threadpool limits.
 Tiny last-bit changes can occur across numerical library/CPU versions.
 
 Fast verification (workspace root)
-python -m pytest test_noise_study.py test_stage3_study.py test_offgrid_baseline.py test_waveform_model.py test_cp_confirmation.py test_valse_python.py test_operating_region_study.py test_valse_budget_sensitivity.py -q
+python -m pytest test_noise_study.py test_stage3_study.py test_offgrid_baseline.py test_waveform_model.py test_cp_confirmation.py test_valse_python.py test_operating_region_study.py test_valse_budget_sensitivity.py test_standard_channel_study.py -q
 Recorded original suite: 51 passed in 9.25 s, exit code 0. The original
 experimental implementations remain unchanged. New-study verification:
 7 passed in 0.70 s, exit code 0, after the adversarial revision.
@@ -91,6 +91,39 @@ prior literature. The study is an analysis/empirical paper, not proof of a
 new estimator's superiority or publication acceptance. Independent CP groups
 do not make CP noise independent of the pilot/data noise; coupling is kept.
 The waveform is ideal synchronized, unfiltered, block-static CP-OFDM; no
-hardware, Doppler, CFO, standardized channel, or coded-throughput claim is made.
+hardware, Doppler, CFO, or coded-throughput claim is made. The additional
+EPA/EVA study uses standardized power-delay profiles under this same model.
 Pointwise bootstrap intervals are not multiplicity-adjusted. Optimization
 checks concern flagged calls and finite budgets, not global optimality.
+
+Standard power-delay-profile validation
+standard_channel_protocol.txt: fixed EPA/EVA experiment design and physical units.
+references/standard_channels/SOURCE.json: official ETSI / 3GPP parameter source.
+results/standard_channel1..3: 300 groups/seed/cell, EPA/EVA x 0/10/20 dB.
+results/standard_channel_summary/: pooled metrics, noise statistics, paired
+  bootstrap intervals, independent-seed summaries and exact-regeneration checks.
+results/standard_channel_budget/: all 1329 flagged fits replayed at budget 300.
+standard_channel_budget_protocol.txt: explicitly post-run numerical audit.
+The six primary cells contain 900 groups each (5400 total). Standard physical
+PDP delays are preserved at a 250 ns sampling interval; all seven/nine physical
+paths are generated, while the existing six-component receiver stays fixed.
+These are standard power-delay profiles in the declared block-static model,
+not standardized Doppler trajectories or a complete LTE conformance test.
+
+Rebuild these tables from saved experiments:
+python analyze_standard_channels.py
+python build_standard_channel_table.py
+python verify_standard_channel_results.py
+
+Rerun the new campaign without overwriting the delivered results:
+./reproduce_manuscript.ps1 -Mode StandardChannels
+This writes results/standard_channel_reproduction/seed1..3 and summary/.
+Use -StandardOutputRoot with a new directory for another rerun. The runner
+refuses to overwrite completed experiments. The post-run budget audit uses
+the original three delivered runs and writes results/standard_channel_budget;
+choose a fresh workspace if rerunning that already delivered audit.
+
+Verification after adding standard profiles: 63 tests passed in 8.64 seconds.
+The six-cell CP-over-residual NMSE gains change by <0.0015 dB when all flagged
+fits are replayed with the higher budget. All 5400 groups regenerate exactly
+in their saved noise arrays; saved LS/EB metrics and capped inputs also match.

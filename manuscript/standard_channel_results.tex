@@ -1,0 +1,40 @@
+\subsection{Calibration under standard EPA and EVA profiles}
+\label{sec:standard_results}
+The standard power-delay profiles reproduce the high-SNR calibration gap
+without changing the receiver or its search settings
+(Tables~\ref{tab:standard_nmse} and~\ref{tab:standard_gain}). At 20~dB,
+the mean residual noise estimates are 14.366 and 11.234 times the thermal
+variance for EPA and EVA, respectively. The projected-covariance predictions
+are 14.316 and 11.288, whereas the CP estimates have mean ratios 1.003 and
+1.001. Thus the externally specified profiles exhibit the same distinction
+between averaging a leaked residual and obtaining a signal-cancelling
+noise measurement.
+
+For the continuous-delay receiver, CP calibration improves 20~dB NMSE by
+5.75~dB on EPA and 6.12~dB on EVA, with paired 95\% intervals
+[5.40, 6.07] and [5.91, 6.31]~dB. The corresponding NMSE values move from
+$-18.04$ to $-23.79$~dB and from $-13.22$ to $-19.34$~dB; the known-noise
+references are $-23.87$ and $-19.36$~dB. Uncoded BER falls from 0.0213 to
+0.0086 on EPA and from 0.0288 to 0.0106 on EVA. All three seed batches
+give positive high-SNR NMSE gains: 5.46--5.90~dB for EPA and 5.94--6.30~dB
+for EVA. Integer EB gains 0.33 and 0.60~dB at the same SNR, retaining its
+integer-subspace representation error despite improved calibration.
+
+The SNR sweep locates the useful operating regime. At 10~dB, the
+continuous-delay NMSE gains are 0.32~dB for EPA and 0.94~dB for EVA. At
+0~dB, they are $-0.17$ and $-0.07$~dB, while BER decreases in both cases.
+These metric-dependent low-SNR outcomes accompany a residual inflation of
+approximately 10--13\%, compared with more than an order of magnitude at
+20~dB. The benefit of changing the noise source therefore follows the
+calibration regime rather than constituting a uniform receiver improvement.
+
+\input{table_standard_channels}
+
+The standard-profile experiment retains all 16\,200 continuous-delay fits,
+including 1329 with a nonconverged candidate and 493 with a nonconverged
+selected candidate at the 60-evaluation limit. Replaying every flagged fit
+with a 300-evaluation limit leaves 92 nonconverged selected candidates.
+The six aggregate CP-over-residual NMSE gains change by at most 0.0015~dB;
+the two 20~dB gains change by less than 0.001~dB. The primary tables retain
+the fixed 60-evaluation budget. This audit establishes stability of the
+reported calibration contrast to this budget increase, not global convergence.

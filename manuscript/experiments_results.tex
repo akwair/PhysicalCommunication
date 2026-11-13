@@ -125,6 +125,8 @@ The oracle reference is
 where $\mathbf C_H$ is generated from the true delays and powers. This reference
 quantifies the performance available with exact channel covariance and noise.
 
+\input{standard_channel_design}
+
 \subsection{Replication, metrics, and numerical validation}
 \label{sec:reproducibility}
 The broad calibration sweep uses three seeds with 5000 groups per cell
@@ -175,7 +177,6 @@ one BLAS thread per process. No learned model or GPU training is used. Source
 hashes, seeds, per-group errors, and optimizer diagnostics are retained. Numerical
 tests check projection moments, variable-projection derivatives, noiseless
 recovery, the CP control, and the variational implementation described below.
-OpenAI Codex was used for debugging assistance.
 
 \section{Results}
 \label{sec:results}
@@ -300,6 +301,8 @@ these cases. The dense-profile comparison is therefore specific to this
 six-path fit and its selection and optimization settings. Continuous-delay models can also represent dense
 channels through a richer virtual channel impulse response, as demonstrated
 by Hansen et al.\ \cite{hansen2018iterative}.
+
+\input{standard_channel_results}
 
 \subsection{Joint inference with a continuous probabilistic model}
 \input{valse_results}
